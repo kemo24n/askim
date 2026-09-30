@@ -25,9 +25,15 @@ type SeedItem = {
 const data = JSON.parse(readFileSync(join(process.cwd(), "src/db/data/askim-menu.json"), "utf8")) as {
   logo: string; cover: string; categories: SeedCategory[]; items: SeedItem[];
 };
-const withDemo = !process.argv.includes("--no-demo");
+const withDemo = () => !process.argv.includes("--no-demo");
 
 async function main() {
+  if (process.argv.includes("--if-empty")) {
+    const [{ n }] = (await db.execute(sql`SELECT count(*)::int AS n FROM items`)).rows as { n: number }[];
+    if (n > 0) { console.log(`✓ Database already has ${n} items — leaving it untouched.`); return; }
+    console.log("› Empty database — loading the Aşkım menu (no demo data)…");
+    process.argv.push("--no-demo");
+  }
   console.log("› Clearing database…");
   await db.execute(sql`TRUNCATE feedback, item_views, gifts, service_requests, order_lines, orders,
     cart_lines, guests, table_sessions, dining_tables, item_options, items, categories, settings
@@ -71,7 +77,7 @@ async function main() {
   await db.insert(s.tables).values(tableRows);
   console.log(`› Tables: ${tableRows.length}`);
 
-  if (withDemo) await seedDemoActivity();
+  if (withDemo()) await seedDemoActivity();
   console.log("✓ Done");
 }
 

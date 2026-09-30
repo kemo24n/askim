@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { mediaUrl } from "@/lib/media";
+import { mediaUrl, withFallback } from "@/lib/media";
 
 /** Image with a graceful branded fallback when the photo is missing or fails. */
 export function Img({
@@ -19,7 +19,7 @@ export function Img({
           loading={eager ? "eager" : "lazy"}
           decoding="async"
           onLoad={() => setLoaded(true)}
-          onError={() => setFailed(true)}
+          onError={withFallback(src, () => setFailed(true))}
           className={`h-full w-full object-cover transition-[opacity,transform] duration-700 ease-(--ease-lux) ${loaded ? "opacity-100" : "opacity-0 scale-[1.03]"} ${imgClassName}`}
         />
       ) : (

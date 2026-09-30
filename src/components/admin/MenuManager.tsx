@@ -151,7 +151,22 @@ export function MenuManager({ categories, items: initial }: { categories: Catego
                 {categories.filter((c) => c.parentId || !childrenOf(c.id).length).map((c) => <option key={c.id} value={c.id}>{c.nameEn}</option>)}
               </select>
             </Field>
-            <Field label="Image URL or path" wide><input value={editing.image ?? ""} onChange={(e) => setEditing({ ...editing, image: e.target.value })} placeholder="https://… or __sized__/products/…" /></Field>
+            <Field label="Photo" wide>
+              <div className="flex items-center gap-3">
+                <Img src={editing.image} alt="" className="h-16 w-16 shrink-0 rounded-xl" />
+                <label className="cursor-pointer rounded-xl border border-gold/30 px-4 py-2 text-sm text-gold">
+                  Upload photo
+                  <input type="file" accept="image/jpeg,image/png,image/webp,image/avif" className="hidden" onChange={async (e) => {
+                    const f = e.target.files?.[0]; if (!f) return;
+                    const fd = new FormData(); fd.append("file", f);
+                    const res = await fetch("/api/admin/upload", { method: "POST", body: fd });
+                    const j = await res.json().catch(() => ({}));
+                    if (res.ok) setEditing((x) => (x ? { ...x, image: j.path } : x)); else flash(j.error || "Upload failed");
+                  }} />
+                </label>
+                <input className="flex-1" value={editing.image ?? ""} onChange={(e) => setEditing({ ...editing, image: e.target.value })} placeholder="or paste an image URL" />
+              </div>
+            </Field>
             <Field label="Oracle role">
               <select value={editing.role} onChange={(e) => setEditing({ ...editing, role: e.target.value })}>{ROLES.map((r) => <option key={r}>{r}</option>)}</select>
             </Field>

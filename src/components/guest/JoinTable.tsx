@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Users, ArrowLeft, ArrowRight } from "lucide-react";
 import { LANG_LABEL, LANGS, t, type Lang } from "@/lib/i18n";
-import { mediaUrl } from "@/lib/media";
+import { mediaUrl, withFallback } from "@/lib/media";
 import { Logo } from "./Logo";
 
 const SUGGEST: Record<Lang, string[]> = { ar: ["ليلى", "سامر", "نور", "كريم"], tr: ["Elif", "Can", "Zeynep", "Emre"], en: ["Layla", "Sam", "Nour", "Karim"] };
@@ -30,7 +30,7 @@ export function JoinTable({ lang, token, tableNumber, zone, coverUrl }: { lang: 
     <main className="relative min-h-dvh overflow-hidden">
       {cover && (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={cover} alt="" className="absolute inset-0 h-full w-full object-cover opacity-35 scale-110 blur-[2px]" />
+        <img src={cover} alt="" onError={withFallback(coverUrl, (el) => (el.style.display = "none"))} className="absolute inset-0 h-full w-full object-cover opacity-35 scale-110 blur-[2px]" />
       )}
       <div className="absolute inset-0 bg-[radial-gradient(90%_60%_at_50%_0%,rgba(147,29,30,0.35),transparent_70%),linear-gradient(to_bottom,rgba(11,9,8,0.4),#0b0908_75%)]" />
       <div className="relative mx-auto flex min-h-dvh max-w-md flex-col items-center justify-center px-6 py-16 text-center">

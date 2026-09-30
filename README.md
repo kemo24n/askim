@@ -59,13 +59,15 @@ No Postgres installed? Quickest option:
 docker run -d --name askim-db -e POSTGRES_USER=askim -e POSTGRES_PASSWORD=askim -e POSTGRES_DB=askim -p 5432:5432 postgres:16
 ```
 
-### Photos
-By default, photos load from the restaurant's current eMenu CDN. To self-host them (recommended before switching the restaurant over):
+### Photos (hosted on our platform)
+Photos are served from **our own server** (`public/media`), not from eMenu.
 ```bash
-npm run images:pull           # downloads every photo into public/media
-# then in .env:
-NEXT_PUBLIC_MEDIA_BASE="/media"
+npm run images:pull           # copies every menu photo into public/media (run once, then commit them)
 ```
+`npm run setup` runs this for you. While photos are still copying, a missing one falls back to the old CDN once, so nothing looks broken.
+To cut eMenu off completely, set `NEXT_PUBLIC_MEDIA_FALLBACK=""` in `.env`.
+
+New dish photos are uploaded from **Admin → Menu → Edit item → Upload photo** and stored in `/uploads` on our server. On a VPS that's permanent. On Vercel, set `UPLOAD_DIR` to a persistent volume or use object storage.
 
 ## Deploy
 Any Node host plus PostgreSQL works, e.g. **Vercel + Neon** or a VPS.

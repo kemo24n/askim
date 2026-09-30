@@ -3,7 +3,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import { Pause, Play, Plus, X } from "lucide-react";
 import { loc } from "@/lib/i18n";
-import { mediaUrl } from "@/lib/media";
+import { mediaUrl, withFallback } from "@/lib/media";
 import type { MenuItem } from "@/lib/types";
 import { useMenu } from "./context";
 import { Logo } from "./Logo";
@@ -55,7 +55,7 @@ export function Stories({ open, onClose, items }: { open: boolean; onClose: () =
       {/* image with Ken Burns */}
       <div key={item.id} className="absolute inset-0 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={mediaUrl(item.image)!} alt={name} className="h-full w-full object-cover animate-[kenburns_7s_ease-out_both]" />
+        <img src={mediaUrl(item.image)!} alt={name} onError={withFallback(item.image)} className="h-full w-full object-cover animate-[kenburns_7s_ease-out_both]" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-ink" />
       </div>
       <style>{`@keyframes kenburns{from{transform:scale(1.18) translate3d(0,2%,0)}to{transform:scale(1.02)}}`}</style>

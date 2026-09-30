@@ -7,7 +7,7 @@ import {
 import { Facebook, Instagram } from "@/components/ui/BrandIcons";
 import { loc, type Lang } from "@/lib/i18n";
 import { currentDaypart, type Daypart } from "@/lib/daypart";
-import { mediaUrl } from "@/lib/media";
+import { mediaUrl, withFallback } from "@/lib/media";
 import type { MenuCategory, MenuData, MenuItem, TableContext } from "@/lib/types";
 import type { TableState } from "@/lib/table-state";
 import { MenuProvider, useMenu } from "./context";
@@ -168,7 +168,7 @@ function Experience() {
       <section className="relative flex min-h-[100svh] flex-col overflow-hidden">
         {cover && (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={cover} alt="" className="absolute inset-0 h-full w-full object-cover opacity-40 animate-[heroZoom_22s_ease-out_both]" />
+          <img src={cover} alt="" onError={withFallback(s.coverUrl, (el) => (el.style.display = "none"))} className="absolute inset-0 h-full w-full object-cover opacity-40 animate-[heroZoom_22s_ease-out_both]" />
         )}
         <style>{`@keyframes heroZoom{from{transform:scale(1.15)}to{transform:scale(1)}}`}</style>
         <div className="absolute inset-0 bg-[radial-gradient(80%_55%_at_50%_30%,rgba(147,29,30,0.38),transparent_70%),linear-gradient(to_bottom,rgba(11,9,8,0.35)_0%,rgba(11,9,8,0.55)_45%,#0b0908_92%)]" />
@@ -375,7 +375,7 @@ function SectionBanner({ cat, count }: { cat: MenuCategory; count: number }) {
     <div className="relative flex h-40 items-end img-fallback">
       {img && (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={img} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover opacity-60" onError={(e) => (e.currentTarget.style.display = "none")} />
+        <img src={img} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover opacity-60" onError={withFallback(cat.image, (el) => (el.style.display = "none"))} />
       )}
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/50 to-ink/10" />
       <div className="relative w-full p-5">
