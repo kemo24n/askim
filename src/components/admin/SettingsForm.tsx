@@ -60,8 +60,10 @@ export function SettingsForm({ initial }: { initial: Settings }) {
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             <Field label="Name (English)">{txt("nameEn")}</Field>
             <Field label="الاسم (عربي)">{txt("nameAr", "rtl")}</Field>
+            <Field label="Ad (Türkçe)">{txt("nameTr")}</Field>
             <Field label="Tagline (English)">{txt("taglineEn")}</Field>
             <Field label="الشعار (عربي)">{txt("taglineAr", "rtl")}</Field>
+            <Field label="Slogan (Türkçe)">{txt("taglineTr")}</Field>
             <Field label="Hero / cover image" wide>{txt("coverUrl")}</Field>
             <Field label="Logo image" wide>{txt("logoUrl")}</Field>
           </div>

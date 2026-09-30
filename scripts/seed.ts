@@ -12,14 +12,14 @@ import { sql } from "drizzle-orm";
 import { db, schema as s } from "../src/db";
 
 type SeedCategory = {
-  id: number; parentId: number | null; sort: number; nameAr: string; nameEn: string;
-  descAr: string | null; descEn: string | null; image: string | null; dayparts: string[];
+  id: number; parentId: number | null; sort: number; nameAr: string; nameEn: string; nameTr: string;
+  descAr: string | null; descEn: string | null; descTr: string | null; image: string | null; dayparts: string[];
 };
 type SeedItem = {
-  id: number; categoryId: number; sort: number; nameAr: string; nameEn: string;
-  descAr: string | null; descEn: string | null; price: number; image: string | null;
+  id: number; categoryId: number; sort: number; nameAr: string; nameEn: string; nameTr: string;
+  descAr: string | null; descEn: string | null; descTr: string | null; price: number; image: string | null;
   role: string; tags: string[]; signature: boolean; serves: number; prepMinutes: number;
-  pairings: number[]; options: { nameAr: string; nameEn: string; priceDelta: number; sort: number }[];
+  pairings: number[]; options: { nameAr: string; nameEn: string; nameTr: string; priceDelta: number; sort: number }[];
 };
 
 const data = JSON.parse(readFileSync(join(process.cwd(), "src/db/data/askim-menu.json"), "utf8")) as {
@@ -109,7 +109,7 @@ async function seedDemoActivity() {
         const it = Math.random() < 0.5 ? pick(signature) : pick(popular);
         const qty = Math.random() < 0.25 ? 2 : 1;
         total += it.price * qty;
-        lineRows.push({ orderId, itemId: it.id, nameAr: it.nameAr, nameEn: it.nameEn, unitPrice: it.price, qty });
+        lineRows.push({ orderId, itemId: it.id, nameAr: it.nameAr, nameEn: it.nameEn, nameTr: it.nameTr, unitPrice: it.price, qty });
         for (let v = 0; v < 2 + rand(3); v++) viewRows.push({ itemId: it.id, createdAt: at });
       }
       for (let v = 0; v < 3 + rand(6); v++) viewRows.push({ itemId: pick(items).id, createdAt: at });
@@ -127,7 +127,7 @@ async function seedDemoActivity() {
   await chunk(lineRows, (r) => db.insert(s.orderLines).values(r));
   await chunk(viewRows, (r) => db.insert(s.itemViews).values(r));
 
-  const comments = ["الكنافة خرافية 😍", "Iskender was unreal", "خدمة سريعة ولطيفة", "Loved the shisha and the vibe", "الأجواء رائعة", "أطيب حمص أشكم"];
+  const comments = ["الكنافة خرافية 😍", "Iskender was unreal", "İskender harikaydı, tıpkı Bursa’daki gibi!", "Künefe muhteşem 👌", "خدمة سريعة ولطيفة", "Loved the shisha and the vibe", "الأجواء رائعة", "أطيب حمص أشكم"];
   await db.insert(s.feedback).values(
     Array.from({ length: 46 }, () => ({
       tableId: pick(tbls).id,

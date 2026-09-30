@@ -50,7 +50,8 @@ export function TablesQR({ tables }: { tables: T[] }) {
                 <div className="mt-1 text-[10px] uppercase tracking-[0.3em] opacity-60">{t.zone}</div>
                 <div className="mx-auto mt-4 w-40" dangerouslySetInnerHTML={{ __html: t.svg }} />
                 <div className="mt-4 font-callig text-lg leading-none">امسح واطلب من طاولتك</div>
-                <div className="font-latin mt-1 text-sm italic">Scan to order, share & send with love</div>
+                <div className="font-latin mt-1 text-sm italic">Okutun, sipariş verin, aşkla gönderin</div>
+                <div className="font-latin text-xs italic opacity-70">Scan to order, share & send with love</div>
                 <span className="absolute -top-1 right-1/2 h-2 w-2 translate-x-1/2 rotate-45 bg-[#931d1e]" />
               </div>
             </div>

@@ -24,9 +24,9 @@ export function MenuManager({ categories, items: initial }: { categories: Catego
   const leafIds = (id: number) => { const k = childrenOf(id); return k.length ? k.map((x) => x.id) : [id]; };
 
   const list = useMemo(() => {
-    const ql = q.trim().toLowerCase();
+    const ql = q.trim().toLocaleLowerCase("tr");
     const ids = cat === "all" ? null : new Set(categories.find((c) => c.id === cat)?.parentId ? [cat] : leafIds(cat as number));
-    return items.filter((i) => (!ids || ids.has(i.categoryId)) && (!ql || `${i.nameEn} ${i.nameAr}`.toLowerCase().includes(ql)));
+    return items.filter((i) => (!ids || ids.has(i.categoryId)) && (!ql || `${i.nameEn} ${i.nameAr} ${i.nameTr ?? ""}`.toLocaleLowerCase("tr").includes(ql)));
   }, [items, cat, q, categories]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const flash = (m: string) => { setMsg(m); setTimeout(() => setMsg(null), 2600); };
@@ -38,8 +38,8 @@ export function MenuManager({ categories, items: initial }: { categories: Catego
   const save = async () => {
     if (!editing) return;
     const body = {
-      categoryId: Number(editing.categoryId), nameAr: editing.nameAr ?? "", nameEn: editing.nameEn ?? "",
-      descAr: editing.descAr || null, descEn: editing.descEn || null, price: Number(editing.price ?? 0),
+      categoryId: Number(editing.categoryId), nameAr: editing.nameAr ?? "", nameEn: editing.nameEn ?? "", nameTr: editing.nameTr || null,
+      descAr: editing.descAr || null, descEn: editing.descEn || null, descTr: editing.descTr || null, price: Number(editing.price ?? 0),
       image: editing.image || null, available: editing.available ?? true, signature: editing.signature ?? false,
       tags: editing.tags ?? [], role: editing.role ?? "main", serves: Number(editing.serves ?? 1), prepMinutes: Number(editing.prepMinutes ?? 15),
     };
@@ -92,7 +92,7 @@ export function MenuManager({ categories, items: initial }: { categories: Catego
         <div className="panel overflow-hidden">
           <div className="flex items-center gap-2 border-b border-line/60 p-3">
             <Search size={16} className="ms-2 text-smoke" />
-            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search items in Arabic or English…" className="!border-0 !bg-transparent flex-1" />
+            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search in Arabic, Turkish or English…" className="!border-0 !bg-transparent flex-1" />
           </div>
           <div className="overflow-x-auto">
             <table className="w-full min-w-[760px] text-sm">
@@ -110,7 +110,7 @@ export function MenuManager({ categories, items: initial }: { categories: Catego
                         <Img src={i.image} alt="" className="h-11 w-11 shrink-0 rounded-lg" />
                         <div className="min-w-0">
                           <div className="truncate text-champagne">{i.nameEn}</div>
-                          <div className="truncate text-xs text-smoke" dir="rtl">{i.nameAr}</div>
+                          <div className="truncate text-xs text-smoke"><span dir="rtl">{i.nameAr}</span>{i.nameTr ? ` · ${i.nameTr}` : ""}</div>
                         </div>
                       </div>
                     </td>
@@ -141,8 +141,10 @@ export function MenuManager({ categories, items: initial }: { categories: Catego
           <div className="grid gap-4 sm:grid-cols-2">
             <Field label="Name (English)"><input value={editing.nameEn ?? ""} onChange={(e) => setEditing({ ...editing, nameEn: e.target.value })} /></Field>
             <Field label="الاسم (عربي)"><input dir="rtl" value={editing.nameAr ?? ""} onChange={(e) => setEditing({ ...editing, nameAr: e.target.value })} /></Field>
+            <Field label="Ad (Türkçe)" wide><input value={editing.nameTr ?? ""} onChange={(e) => setEditing({ ...editing, nameTr: e.target.value })} /></Field>
             <Field label="Description (English)" wide><textarea rows={2} value={editing.descEn ?? ""} onChange={(e) => setEditing({ ...editing, descEn: e.target.value })} /></Field>
             <Field label="الوصف (عربي)" wide><textarea dir="rtl" rows={2} value={editing.descAr ?? ""} onChange={(e) => setEditing({ ...editing, descAr: e.target.value })} /></Field>
+            <Field label="Açıklama (Türkçe)" wide><textarea rows={2} value={editing.descTr ?? ""} onChange={(e) => setEditing({ ...editing, descTr: e.target.value })} /></Field>
             <Field label="Price (new SYP)"><input type="number" value={editing.price ?? 0} onChange={(e) => setEditing({ ...editing, price: Number(e.target.value) })} /></Field>
             <Field label="Category">
               <select value={editing.categoryId} onChange={(e) => setEditing({ ...editing, categoryId: Number(e.target.value) })}>

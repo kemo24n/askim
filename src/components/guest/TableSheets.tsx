@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import {
   Bell, Check, ChefHat, Droplets, Flame, Gift, Heart, Minus, Plus, Receipt, Sparkles, Star, Wind, Eraser,
 } from "lucide-react";
-import { loc } from "@/lib/i18n";
+import { dirOf, LANG_LABEL, LANGS, loc, type Lang } from "@/lib/i18n";
 import { CURRENCIES, currencyLabel, formatMoney } from "@/lib/money";
 import { Img } from "@/components/ui/Img";
 import { Sheet } from "@/components/ui/Sheet";
@@ -150,7 +150,7 @@ export function CartSheet({ open, onClose }: { open: boolean; onClose: () => voi
                   <ul className="mt-3 space-y-1 text-sm">
                     {o.lines.map((l) => (
                       <li key={l.id} className="flex justify-between gap-3 text-champagne/85">
-                        <span className="truncate">{l.qty}× {lang === "ar" ? l.nameAr : l.nameEn}</span>
+                        <span className="truncate">{l.qty}× {loc(l, "name", lang)}</span>
                         <span className="tabular-nums text-mist">{price(l.unitPrice * l.qty)}</span>
                       </li>
                     ))}
@@ -338,7 +338,7 @@ export function GiftArrival() {
         {gift.message && <p className="mt-4 font-display text-xl italic leading-snug text-champagne/90">“{gift.message}”</p>}
         <div className="mt-3 text-sm text-rose">{gift.senderName ? d.giftFrom(gift.senderName) : d.giftSecret}</div>
         <button onClick={() => markGiftSeen(gift.id)} className="btn-gold mt-7 w-full rounded-full py-3.5">
-          <Heart size={16} className="me-2 inline" fill="currentColor" /> {lang === "ar" ? "شكراً من القلب" : "Thank you, truly"}
+          <Heart size={16} className="me-2 inline" fill="currentColor" /> {d.thanksGift}
         </button>
       </div>
     </div>
@@ -355,6 +355,24 @@ export function CurrencySheet({ open, onClose }: { open: boolean; onClose: () =>
             className={`flex items-center justify-between rounded-2xl border px-5 py-4 transition ${currency === c ? "border-gold bg-gold/10" : "border-gold/15"}`}>
             <span className="text-champagne">{currencyLabel(c, lang)}</span>
             <span className="text-sm text-mist tabular-nums">{formatMoney(1650, c, data.settings.rates, lang)}</span>
+          </button>
+        ))}
+      </div>
+    </Sheet>
+  );
+}
+
+export function LanguageSheet({ open, onClose, onPick }: { open: boolean; onClose: () => void; onPick: (l: Lang) => void }) {
+  const { d, lang } = useMenu();
+  const sample: Record<Lang, string> = { ar: "أهلاً وسهلاً", tr: "Hoş geldiniz", en: "Welcome" };
+  return (
+    <Sheet open={open} onClose={onClose} labelClose={d.close} title={<span className="font-display text-2xl text-champagne">{d.language}</span>}>
+      <div className="grid gap-2 px-5 pb-8">
+        {LANGS.map((l) => (
+          <button key={l} onClick={() => (l === lang ? onClose() : onPick(l))} dir={dirOf(l)}
+            className={`flex items-center justify-between rounded-2xl border px-5 py-4 transition ${lang === l ? "border-gold bg-gold/10" : "border-gold/15"}`}>
+            <span className={`text-lg text-champagne ${l === "ar" ? "font-callig" : "font-latin"}`}>{LANG_LABEL[l]}</span>
+            <span className="text-sm text-mist">{sample[l]}</span>
           </button>
         ))}
       </div>

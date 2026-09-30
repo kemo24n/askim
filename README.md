@@ -1,16 +1,17 @@
 # Aşkım · أشكم — Interactive Dining Platform
 
-A luxury, bilingual (Arabic RTL / English) dining platform for **Aşkım**: a guest menu, a shared live table, one-tap service and an owner control room.
+A luxury, trilingual (Arabic RTL · Turkish · English) dining platform for **Aşkım**: a guest menu, a shared live table, one-tap service and an owner control room.
 Built by **Solunera**.
 
 ---
 
 ## What's inside
 
-### Guest experience (`/ar`, `/en`)
+### Guest experience (`/ar`, `/tr`, `/en`)
 | Feature | What it does |
 |---|---|
-| **Cinematic menu** | All sections and 270 dishes with photos, in Arabic calligraphy and English serif, animated hero, section banners, search and filters. |
+| **Three full languages** | Arabic (RTL), Turkish and English: every dish, description, button and message. The language is picked automatically from the phone and can be switched any time. |
+| **Cinematic menu** | All sections and 270 dishes with photos, in Arabic calligraphy and Latin serif, animated hero, section banners, search and filters. |
 | **Time-aware ordering** | Breakfast and coffee come first in the morning. Grills, shisha and desserts lead at night (Damascus time). |
 | **أشكم Oracle** | The guest picks a mood, party size, budget and preferences, and the Oracle builds a balanced table (mezza, mains, drinks, dessert) within budget. Everything can be added in one tap. |
 | **Stories mode** | A full-screen, swipeable reel of signature dishes, like Instagram stories. |
@@ -27,7 +28,7 @@ Built by **Solunera**.
 |---|---|
 | **Live floor** | Floor map by zone showing free, seated, ordering and needs-attention tables. KPIs, a live request queue, gift approvals, a per-table drawer and a close-table button. Plays a chime on anything new. |
 | **Kitchen** | Kanban board (New → Preparing → Ready) with notes, gift flags, late-order highlighting and full-screen mode for a kitchen TV. |
-| **Menu** | Edit prices inline, toggle sold-out and signature, full item editor (AR/EN), and a **bulk price update** (± %, rounded, previewed before applying). |
+| **Menu** | Edit prices inline, toggle sold-out and signature, full item editor (AR/TR/EN), and a **bulk price update** (± %, rounded, previewed before applying). |
 | **Tables & QR** | Printable table cards with each table's QR code, adding tables, regenerating codes, and opening any table as a guest. |
 | **Insights** | Revenue by day, an hour × weekday heatmap, best sellers, revenue by section, **“looked at, rarely ordered”** dishes (views vs orders) and guest reviews. |
 | **Settings** | Exchange rates, service charge, order and gift switches, brand and social links. |
@@ -47,7 +48,7 @@ cp .env.example .env          # set DATABASE_URL + ADMIN_PASSWORD
 npm run setup                 # creates tables + seeds the full menu, 28 tables and demo activity
 npm run dev
 ```
-- Guest menu: http://localhost:3000
+- Guest menu: http://localhost:3000 (`/ar`, `/tr`, `/en`)
 - Seat yourself at table 7 (pitch shortcut): http://localhost:3000/demo
 - Control room: http://localhost:3000/admin (password from `.env`, default `askim2026`)
 
@@ -83,4 +84,3 @@ Any Node host plus PostgreSQL works, e.g. **Vercel + Neon** or a VPS.
 
 ---
 © Solunera · @soluneragency
-"# askim" 

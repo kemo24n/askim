@@ -36,7 +36,7 @@ export async function getTableState(sessionId: string, tableId: number) {
       id: o.id, number: o.number, status: o.status, isGift: o.isGift, total: o.total,
       tableId: o.tableId, createdAt: o.createdAt.toISOString(),
       lines: lines.filter((l) => l.orderId === o.id).map((l) => ({
-        id: l.id, itemId: l.itemId, guestId: l.guestId, nameAr: l.nameAr, nameEn: l.nameEn,
+        id: l.id, itemId: l.itemId, guestId: l.guestId, nameAr: l.nameAr, nameEn: l.nameEn, nameTr: l.nameTr,
         optionName: l.optionName, unitPrice: l.unitPrice, qty: l.qty,
       })),
     })),

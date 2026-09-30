@@ -12,7 +12,7 @@ export async function getSettings() {
 
 export function publicSettings(row: Awaited<ReturnType<typeof getSettings>>): PublicSettings {
   return {
-    nameAr: row.nameAr, nameEn: row.nameEn, taglineAr: row.taglineAr, taglineEn: row.taglineEn,
+    nameAr: row.nameAr, nameEn: row.nameEn, nameTr: row.nameTr, taglineAr: row.taglineAr, taglineEn: row.taglineEn, taglineTr: row.taglineTr,
     logoUrl: row.logoUrl, coverUrl: row.coverUrl, instagram: row.instagram, facebook: row.facebook,
     whatsapp: row.whatsapp, googleReviews: row.googleReviews, address: row.address,
     rates: { USD: row.rateUSD, EUR: row.rateEUR, TRY: row.rateTRY, AED: row.rateAED },
@@ -44,23 +44,23 @@ export async function getMenu(): Promise<MenuData> {
   ]);
   const activeCats = new Set(cats.map((c) => c.id));
   const todayMap = new Map(today.map((r) => [r.itemId, r.n]));
-  const optMap = new Map<number, { id: number; nameAr: string; nameEn: string; priceDelta: number }[]>();
+  const optMap = new Map<number, { id: number; nameAr: string; nameEn: string; nameTr: string | null; priceDelta: number }[]>();
   for (const o of options) {
     const arr = optMap.get(o.itemId) ?? [];
-    arr.push({ id: o.id, nameAr: o.nameAr, nameEn: o.nameEn, priceDelta: o.priceDelta });
+    arr.push({ id: o.id, nameAr: o.nameAr, nameEn: o.nameEn, nameTr: o.nameTr, priceDelta: o.priceDelta });
     optMap.set(o.itemId, arr);
   }
   return {
     settings: publicSettings(settingsRow),
     categories: cats.map((c) => ({
-      id: c.id, parentId: c.parentId, nameAr: c.nameAr, nameEn: c.nameEn, descAr: c.descAr,
-      descEn: c.descEn, image: c.image, sort: c.sort, dayparts: c.dayparts,
+      id: c.id, parentId: c.parentId, nameAr: c.nameAr, nameEn: c.nameEn, nameTr: c.nameTr, descAr: c.descAr,
+      descEn: c.descEn, descTr: c.descTr, image: c.image, sort: c.sort, dayparts: c.dayparts,
     })),
     items: items
       .filter((i) => activeCats.has(i.categoryId))
       .map((i) => ({
-        id: i.id, categoryId: i.categoryId, nameAr: i.nameAr, nameEn: i.nameEn, descAr: i.descAr,
-        descEn: i.descEn, price: i.price, image: i.image, available: i.available, signature: i.signature,
+        id: i.id, categoryId: i.categoryId, nameAr: i.nameAr, nameEn: i.nameEn, nameTr: i.nameTr, descAr: i.descAr,
+        descEn: i.descEn, descTr: i.descTr, price: i.price, image: i.image, available: i.available, signature: i.signature,
         tags: i.tags, role: i.role, serves: i.serves, prepMinutes: i.prepMinutes, pairings: i.pairings,
         options: optMap.get(i.id) ?? [], today: todayMap.get(i.id) ?? 0,
       })),

@@ -1,11 +1,13 @@
-export type MenuOption = { id: number; nameAr: string; nameEn: string; priceDelta: number };
+export type MenuOption = { id: number; nameAr: string; nameEn: string; nameTr: string | null; priceDelta: number };
 export type MenuItem = {
   id: number;
   categoryId: number;
   nameAr: string;
   nameEn: string;
+  nameTr: string | null;
   descAr: string | null;
   descEn: string | null;
+  descTr: string | null;
   price: number;
   image: string | null;
   available: boolean;
@@ -23,8 +25,10 @@ export type MenuCategory = {
   parentId: number | null;
   nameAr: string;
   nameEn: string;
+  nameTr: string | null;
   descAr: string | null;
   descEn: string | null;
+  descTr: string | null;
   image: string | null;
   sort: number;
   dayparts: string[];
@@ -32,8 +36,10 @@ export type MenuCategory = {
 export type PublicSettings = {
   nameAr: string;
   nameEn: string;
+  nameTr: string;
   taglineAr: string;
   taglineEn: string;
+  taglineTr: string;
   logoUrl: string | null;
   coverUrl: string | null;
   instagram: string | null;

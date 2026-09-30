@@ -2,11 +2,11 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Users, ArrowLeft, ArrowRight } from "lucide-react";
-import { t, type Lang } from "@/lib/i18n";
+import { LANG_LABEL, LANGS, t, type Lang } from "@/lib/i18n";
 import { mediaUrl } from "@/lib/media";
 import { Logo } from "./Logo";
 
-const SUGGEST = { ar: ["ليلى", "سامر", "نور", "كريم"], en: ["Layla", "Sam", "Nour", "Karim"] };
+const SUGGEST: Record<Lang, string[]> = { ar: ["ليلى", "سامر", "نور", "كريم"], tr: ["Elif", "Can", "Zeynep", "Emre"], en: ["Layla", "Sam", "Nour", "Karim"] };
 
 export function JoinTable({ lang, token, tableNumber, zone, coverUrl }: { lang: Lang; token: string; tableNumber: number; zone: string; coverUrl: string | null }) {
   const d = t(lang);
@@ -59,7 +59,12 @@ export function JoinTable({ lang, token, tableNumber, zone, coverUrl }: { lang: 
           </button>
           {err && <p className="mt-3 text-sm text-rose">{err}</p>}
         </form>
-        <a href={`/${lang === "ar" ? "en" : "ar"}/t/${token}`} className="mt-8 text-xs text-smoke underline-offset-4 hover:underline">{d.language}</a>
+        <div className="mt-8 flex gap-2">
+          {LANGS.map((l) => (
+            <a key={l} href={`/${l}/t/${token}`} onClick={() => { document.cookie = `askim_lang=${l}; path=/; max-age=31536000`; }}
+              className={`rounded-full px-3 py-1.5 text-xs ${l === lang ? "bg-gold/15 text-gold" : "text-smoke hover:text-champagne"}`}>{LANG_LABEL[l]}</a>
+          ))}
+        </div>
       </div>
     </main>
   );

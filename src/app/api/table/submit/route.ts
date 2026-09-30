@@ -20,7 +20,7 @@ export async function POST() {
     const it = items.find((i) => i.id === c.itemId)!;
     const op = options.find((o) => o.id === c.optionId);
     return {
-      itemId: it.id, guestId: c.guestId, nameAr: it.nameAr, nameEn: it.nameEn,
+      itemId: it.id, guestId: c.guestId, nameAr: it.nameAr, nameEn: it.nameEn, nameTr: it.nameTr,
       optionName: op ? `${op.nameEn} · ${op.nameAr}` : null,
       unitPrice: it.price + (op?.priceDelta ?? 0), qty: c.qty, note: c.note,
     };

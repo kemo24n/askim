@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Clock, Flame, Gift, Minus, Plus, QrCode, Sparkles, Users } from "lucide-react";
-import { loc } from "@/lib/i18n";
+import { loc, localeOf } from "@/lib/i18n";
 import { Img } from "@/components/ui/Img";
 import { Sheet } from "@/components/ui/Sheet";
 import { useMenu } from "./context";
@@ -51,13 +51,13 @@ export function ItemSheet({ onGift }: { onGift: (itemId: number) => void }) {
         <div className="px-6 pb-8">
           <h2 className="font-display text-[2.1rem] leading-[1.1] text-champagne">{name}</h2>
           {lang === "ar" ? (
-            <div className="mt-1 font-latin text-lg text-smoke" dir="ltr">{item.nameEn}</div>
+            <div className="mt-1 font-latin text-lg text-smoke" dir="ltr">{item.nameTr || item.nameEn}</div>
           ) : (
             <div className="mt-1 font-callig text-xl text-smoke" dir="rtl">{item.nameAr}</div>
           )}
           <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-mist">
             <span className="text-xl font-medium text-gold tabular-nums">{price(unit)}</span>
-            {data.settings.showOldSYP && <span className="text-xs text-smoke tabular-nums">{new Intl.NumberFormat(lang === "ar" ? "ar-SY" : "en-US").format(unit * 100)} {d.oldSyp}</span>}
+            {data.settings.showOldSYP && <span className="text-xs text-smoke tabular-nums">{new Intl.NumberFormat(localeOf(lang)).format(unit * 100)} {d.oldSyp}</span>}
           </div>
           <div className="mt-3 flex flex-wrap gap-2 text-xs text-mist">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-white/5 px-3 py-1.5"><Clock size={13} /> {d.minutes(item.prepMinutes)}</span>

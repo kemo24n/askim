@@ -21,7 +21,7 @@ export async function PATCH(req: Request, { params }: { params: Promise<{ id: st
         sessionId: gift.sessionId, tableId: gift.toTableId, isGift: true, total: item.price,
       }).returning();
       await tx.insert(s.orderLines).values({
-        orderId: order.id, itemId: item.id, guestId: gift.guestId, nameAr: item.nameAr, nameEn: item.nameEn,
+        orderId: order.id, itemId: item.id, guestId: gift.guestId, nameAr: item.nameAr, nameEn: item.nameEn, nameTr: item.nameTr,
         unitPrice: item.price, qty: 1, note: gift.message ? `🌹 ${gift.message}` : "🌹 Gift",
       });
       await tx.update(s.gifts).set({ status: "approved" }).where(eq(s.gifts.id, id));

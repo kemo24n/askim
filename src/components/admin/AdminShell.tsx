@@ -88,7 +88,7 @@ export function AdminShell({ children, rateUSD }: { children: React.ReactNode; r
             })}
           </nav>
           <div className="mt-auto flex flex-col gap-1 text-sm">
-            <a href="/ar" target="_blank" className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-mist hover:bg-white/5"><ExternalLink size={16} /> Guest menu</a>
+            <a href="/" target="_blank" className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-mist hover:bg-white/5"><ExternalLink size={16} /> Guest menu</a>
             <button onClick={() => setSound((x) => !x)} className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-mist hover:bg-white/5">{sound ? <Volume2 size={16} /> : <VolumeX size={16} />} Sound {sound ? "on" : "off"}</button>
             <button onClick={logout} className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-mist hover:bg-white/5"><LogOut size={16} /> Log out</button>
             <div className="mt-3 px-3 text-[10px] text-smoke">Built by <span className="text-gold/80">Solunera</span></div>

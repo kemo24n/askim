@@ -1,27 +1,27 @@
-import type { Lang } from "./i18n";
+import { localeOf, type Lang } from "./i18n";
 
 export type Currency = "SYP" | "OLD" | "USD" | "EUR" | "TRY" | "AED";
 export const CURRENCIES: Currency[] = ["SYP", "OLD", "USD", "EUR", "TRY", "AED"];
 
 export type Rates = { USD: number; EUR: number; TRY: number; AED: number };
 
-const SYMBOL: Record<Currency, { ar: string; en: string }> = {
-  SYP: { ar: "ل.س", en: "SYP" },
-  OLD: { ar: "ل.س ق", en: "old SYP" },
-  USD: { ar: "$", en: "$" },
-  EUR: { ar: "€", en: "€" },
-  TRY: { ar: "₺", en: "₺" },
-  AED: { ar: "د.إ", en: "AED" },
+const SYMBOL: Record<Currency, Record<Lang, string>> = {
+  SYP: { ar: "ل.س", tr: "SYP", en: "SYP" },
+  OLD: { ar: "ل.س ق", tr: "eski SYP", en: "old SYP" },
+  USD: { ar: "$", tr: "$", en: "$" },
+  EUR: { ar: "€", tr: "€", en: "€" },
+  TRY: { ar: "₺", tr: "₺", en: "₺" },
+  AED: { ar: "د.إ", tr: "AED", en: "AED" },
 };
-export const currencyLabel = (c: Currency, l: Lang) =>
-  ({
-    SYP: l === "ar" ? "ليرة جديدة" : "New SYP",
-    OLD: l === "ar" ? "ليرة قديمة" : "Old SYP",
-    USD: l === "ar" ? "دولار" : "US Dollar",
-    EUR: l === "ar" ? "يورو" : "Euro",
-    TRY: l === "ar" ? "ليرة تركية" : "Turkish Lira",
-    AED: l === "ar" ? "درهم" : "UAE Dirham",
-  })[c];
+const LABELS: Record<Currency, Record<Lang, string>> = {
+  SYP: { ar: "ليرة جديدة", tr: "Yeni Suriye Lirası", en: "New SYP" },
+  OLD: { ar: "ليرة قديمة", tr: "Eski Suriye Lirası", en: "Old SYP" },
+  USD: { ar: "دولار", tr: "ABD Doları", en: "US Dollar" },
+  EUR: { ar: "يورو", tr: "Euro", en: "Euro" },
+  TRY: { ar: "ليرة تركية", tr: "Türk Lirası", en: "Turkish Lira" },
+  AED: { ar: "درهم", tr: "BAE Dirhemi", en: "UAE Dirham" },
+};
+export const currencyLabel = (c: Currency, l: Lang) => LABELS[c][l];
 
 /** price is in NEW Syrian pounds */
 export function convert(price: number, c: Currency, rates: Rates): number {
@@ -33,11 +33,12 @@ export function convert(price: number, c: Currency, rates: Rates): number {
 export function formatMoney(price: number, c: Currency, rates: Rates, l: Lang): string {
   const v = convert(price, c, rates);
   const digits = c === "SYP" || c === "OLD" ? 0 : v < 100 ? 2 : 0;
-  const n = new Intl.NumberFormat(l === "ar" ? "ar-SY" : "en-US", {
+  const n = new Intl.NumberFormat(localeOf(l), {
     maximumFractionDigits: digits,
     minimumFractionDigits: digits,
   }).format(v);
   const sym = SYMBOL[c][l];
-  if (c === "USD" || c === "EUR") return l === "ar" ? `${n} ${sym}` : `${sym}${n}`;
+  if (c === "USD" || c === "EUR") return l === "en" ? `${sym}${n}` : `${n} ${sym}`;
+  if (c === "TRY" && l === "tr") return `${sym}${n}`;
   return `${n} ${sym}`;
 }

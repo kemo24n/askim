@@ -16,7 +16,7 @@ import { ItemSheet } from "./ItemSheet";
 import { Oracle } from "./Oracle";
 import { Stories } from "./Stories";
 import { Logo } from "./Logo";
-import { Avatar, CartSheet, CurrencySheet, FeedbackSheet, GiftArrival, GiftSheet, ServiceSheet } from "./TableSheets";
+import { Avatar, CartSheet, CurrencySheet, FeedbackSheet, GiftArrival, GiftSheet, LanguageSheet, ServiceSheet } from "./TableSheets";
 
 export function MenuExperience(props: { lang: Lang; data: MenuData; table: TableContext; initialState: TableState | null }) {
   return (
@@ -39,7 +39,7 @@ function Experience() {
   const [daypart, setDaypart] = useState<Daypart>("evening");
   useEffect(() => setDaypart(currentDaypart()), []);
 
-  const [sheet, setSheet] = useState<null | "oracle" | "stories" | "cart" | "service" | "gift" | "currency" | "feedback">(null);
+  const [sheet, setSheet] = useState<null | "oracle" | "stories" | "cart" | "service" | "gift" | "currency" | "feedback" | "language">(null);
   const [giftPreset, setGiftPreset] = useState<number | null>(null);
   const [query, setQuery] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
@@ -81,13 +81,13 @@ function Experience() {
   }, [data, daypart]);
 
   const filteredSections = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const q = query.trim().toLocaleLowerCase("tr");
     if (!q && !filter) return sections;
     return sections
       .map((s) => ({
         ...s,
         items: s.items.filter((i) => {
-          const hay = `${i.nameAr} ${i.nameEn} ${i.descAr ?? ""} ${i.descEn ?? ""}`.toLowerCase();
+          const hay = `${i.nameAr} ${i.nameEn} ${i.nameTr ?? ""} ${i.descAr ?? ""} ${i.descEn ?? ""} ${i.descTr ?? ""}`.toLocaleLowerCase("tr");
           return (!q || hay.includes(q)) && (!filter || i.tags.includes(filter));
         }),
       }))
@@ -128,10 +128,9 @@ function Experience() {
     if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 118, behavior: "smooth" });
   };
 
-  const switchLang = () => {
-    const next = lang === "ar" ? "en" : "ar";
+  const switchLang = (next: Lang) => {
     document.cookie = `askim_lang=${next}; path=/; max-age=31536000`;
-    window.location.href = `/${next}`;
+    window.location.href = `/${next}${window.location.hash}`;
   };
 
   const cartCount = state?.cart.reduce((a, c) => a + c.qty, 0) ?? 0;
@@ -161,7 +160,7 @@ function Experience() {
           )}
           <IconBtn label={d.search} onClick={() => { setSearchOpen(true); setTimeout(() => jump(sections[0]?.cat.id ?? 0), 10); }}><Search size={18} /></IconBtn>
           <IconBtn label={d.currency} onClick={() => setSheet("currency")}><Coins size={18} /></IconBtn>
-          <IconBtn label={d.language} onClick={switchLang}><Globe size={18} /></IconBtn>
+          <IconBtn label={d.language} onClick={() => setSheet("language")}><Globe size={18} /></IconBtn>
         </div>
       </header>
 
@@ -277,7 +276,7 @@ function Experience() {
         {/* ─── Footer ─── */}
         <footer className="mt-24 px-6 text-center">
           <Logo size="md" />
-          <p className="mt-4 text-sm text-mist">{lang === "ar" ? s.taglineAr : s.taglineEn}</p>
+          <p className="mt-4 text-sm text-mist">{loc(s, "tagline", lang)}</p>
           <div className="mt-6 flex justify-center gap-3">
             {s.instagram && <a href={s.instagram} target="_blank" rel="noreferrer" className="grid h-11 w-11 place-items-center rounded-full border border-gold/20 text-gold" aria-label="Instagram"><Instagram size={18} /></a>}
             {s.facebook && <a href={s.facebook} target="_blank" rel="noreferrer" className="grid h-11 w-11 place-items-center rounded-full border border-gold/20 text-gold" aria-label="Facebook"><Facebook size={18} /></a>}
@@ -322,6 +321,7 @@ function Experience() {
       <GiftSheet open={sheet === "gift"} onClose={() => setSheet(null)} preset={giftPreset} />
       <CurrencySheet open={sheet === "currency"} onClose={() => setSheet(null)} />
       <FeedbackSheet open={sheet === "feedback"} onClose={() => setSheet(null)} />
+      <LanguageSheet open={sheet === "language"} onClose={() => setSheet(null)} onPick={switchLang} />
       <GiftArrival />
       <DeepLink onOpen={openItem} />
     </div>

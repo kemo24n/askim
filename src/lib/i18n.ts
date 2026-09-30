@@ -1,7 +1,10 @@
-export type Lang = "ar" | "en";
-export const LANGS: Lang[] = ["ar", "en"];
-export const isLang = (v: string | undefined | null): v is Lang => v === "ar" || v === "en";
+export type Lang = "ar" | "tr" | "en";
+/** Display order: Arabic, Turkish, English */
+export const LANGS: Lang[] = ["ar", "tr", "en"];
+export const LANG_LABEL: Record<Lang, string> = { ar: "العربية", tr: "Türkçe", en: "English" };
+export const isLang = (v: string | undefined | null): v is Lang => v === "ar" || v === "tr" || v === "en";
 export const dirOf = (l: Lang) => (l === "ar" ? "rtl" : "ltr");
+export const localeOf = (l: Lang) => ({ ar: "ar-SY", tr: "tr-TR", en: "en-US" })[l];
 
 const dict = {
   ar: {
@@ -107,8 +110,118 @@ const dict = {
     guestsHere: (n: number) => `${n.toLocaleString("ar-SY")} على الطاولة`,
     you: "أنت",
     remove: "حذف",
-    language: "English",
+    language: "اللغة",
+    thanksGift: "شكراً من القلب",
+    joined: (n: string) => `${n} انضم للطاولة ✨`,
     courses: { mezza: "مقبلات", salad: "سلطة", soup: "شوربة", main: "طبق رئيسي", grill: "مشاوي", bread: "من الفرن", breakfast: "فطور", drink: "مشروب", dessert: "حلو", shisha: "أركيلة", kids: "للأطفال" },
+  },
+  tr: {
+    brandLine: "Şam mutfağı, Türk ruhu",
+    welcome: "Hoş geldiniz",
+    heroTitle: "Her tabak bir aşk mektubu",
+    heroSub: "Aşkım, Türkçede “sevgilim” demek. Böyle pişiriyor, sizi böyle ağırlıyoruz.",
+    explore: "Menüyü keşfedin",
+    oracle: "Aşkım Kahini",
+    oracleSub: "Ruh halinizi söyleyin, sofranızı ben kurayım",
+    stories: "Hikayeler",
+    storiesSub: "Bir film gibi menü",
+    search: "Yemek, malzeme veya içecek arayın…",
+    nowServing: "Tam bu ana göre",
+    morning: "Günaydın",
+    afternoon: "İyi günler",
+    evening: "İyi akşamlar",
+    night: "Gece keyfi",
+    signature: "Aşkım İmzası",
+    signatureSub: "Adımızı duyuran tabaklar",
+    all: "Tümü",
+    filters: { spicy: "Acılı", vegetarian: "Vejetaryen", sharing: "Paylaşmalık", new: "Yeni", cold: "Soğuk", hot: "Sıcak", turkish: "Türk mutfağı", kids: "Çocuklar" },
+    orderedTonight: (n: number) => `Bugün ${n} kez sipariş edildi`,
+    serves: (n: number) => (n > 1 ? `${n} kişilik` : "1 kişilik"),
+    minutes: (n: number) => `${n} dk`,
+    pairsWith: "Yanına çok yakışır",
+    addToTable: "Masaya ekle",
+    add: "Ekle",
+    unavailable: "Şu an mevcut değil",
+    note: "Mutfağa not (soğansız, bol limonlu…)",
+    choose: "Seçiniz",
+    currency: "Para birimi",
+    oldSyp: "eski SYP",
+    syp: "SYP",
+    table: "Masa",
+    yourTable: "Masanız",
+    joinTitle: "Masanıza hoş geldiniz",
+    joinSub: "Arkadaşlarınız ne seçtiğinizi görsün diye adınızı yazın. Bu kodu okutan herkes aynı canlı masayı paylaşır.",
+    yourName: "Adınız",
+    join: "Masaya katıl",
+    scanToOrder: "Anında sipariş için masanızdaki QR kodu okutun",
+    browsingOnly: "Menüye göz atıyorsunuz",
+    tableCart: "Masa siparişi",
+    emptyCart: "Masanız henüz boş. Lezzetli bir şeyle başlayın ✨",
+    sendToKitchen: "Mutfağa gönder",
+    sending: "Gönderiliyor…",
+    sent: "Siparişiniz mutfağa ulaştı",
+    total: "Toplam",
+    subtotal: "Ara toplam",
+    service: "Servis",
+    byGuest: "Kişiye göre",
+    splitBill: "Hesabı böl",
+    yourShare: "Payınız",
+    orders: "Siparişler",
+    status: { new: "Alındı", preparing: "Hazırlanıyor", ready: "Hazır, yolda", served: "Masada", cancelled: "İptal edildi" },
+    services: "Anında servis",
+    req: { waiter: "Garson çağır", bill: "Hesap", coal: "Taze köz", water: "Su", napkins: "Peçete", clean: "Masayı topla" },
+    reqSent: "Tamam! Ekibimiz geliyor",
+    reqPending: "Yolda…",
+    gift: "Aşkla gönder",
+    giftSub: "Başka bir masayı bir tatlı ya da içecek ve kendi notunuzla şaşırtın",
+    giftTo: "Hangi masaya?",
+    giftPick: "Hediyeyi seçin",
+    giftMsg: "Mesajınız (isteğe bağlı)",
+    giftMsgPh: "Salonun öbür ucundan, sevgiyle 🌹",
+    giftAnon: "İsimsiz gönder",
+    giftFromName: "Kartta yazacak isim",
+    giftSend: "Hediyeyi gönder",
+    giftSent: "Hediyeniz yolda. Ekibimiz zarafetle ulaştıracak 🌹",
+    giftNoTables: "Şu an başka dolu masa yok",
+    giftArrived: "Size bir hediye geldi!",
+    giftFrom: (n: string) => `${n} tarafından`,
+    giftSecret: "Gizli bir hayranınızdan",
+    giftAddedToBill: "Masanızın hesabına eklenir",
+    close: "Kapat",
+    back: "Geri",
+    next: "İleri",
+    oracleQ1: "Bu akşam canınız ne istiyor?",
+    oracleQ2: "Masada kaç kişisiniz?",
+    oracleQ3: "Tüm masa için bütçe",
+    oracleQ4: "Tercihleriniz var mı?",
+    moods: { feast: "Şam ziyafeti", light: "Hafif ve ferah", grill: "Izgara tutkunları", sweet: "Tatlı ve kahve keyfi", brunch: "Geç kahvaltı", surprise: "Beni şaşırt" },
+    noLimit: "Sınırsız",
+    prefs: { vegetarian: "Vejetaryen", noSpicy: "Acısız", shisha: "Nargileyle", kids: "Çocuklarla" },
+    buildTable: "Soframı kur",
+    oracleResult: "Sofranız hazır",
+    oracleResultSub: "Lezzet ve bütçe dengesi için özenle seçildi",
+    addAll: "Hepsini masaya ekle",
+    reroll: "Başka bir fikir",
+    perPerson: "kişi başı",
+    within: "Bütçe dahilinde",
+    feedback: "Deneyiminiz nasıldı?",
+    feedbackThanks: "Teşekkürler. Sözleriniz mutfağımıza yön veriyor",
+    feedbackPh: "Şefe ya da ekibe bir söz…",
+    submit: "Gönder",
+    followUs: "Bizi takip edin",
+    poweredBy: "Sevgiyle tasarlayan",
+    noResults: "Bu isimle bir şey bulunamadı",
+    items: (n: number) => `${n} lezzet`,
+    tapToExplore: "Keşfetmek için dokunun",
+    swipe: "Sonraki için kaydırın",
+    liveTable: "Canlı masa",
+    guestsHere: (n: number) => `Masada ${n} kişi`,
+    you: "Siz",
+    remove: "Kaldır",
+    language: "Dil",
+    thanksGift: "Yürekten teşekkürler",
+    joined: (n: string) => `${n} masaya katıldı ✨`,
+    courses: { mezza: "Meze", salad: "Salata", soup: "Çorba", main: "Ana yemek", grill: "Izgaradan", bread: "Fırından", breakfast: "Kahvaltı", drink: "İçecek", dessert: "Tatlı", shisha: "Nargile", kids: "Çocuk" },
   },
   en: {
     brandLine: "Levantine kitchen, Turkish soul",
@@ -213,7 +326,9 @@ const dict = {
     guestsHere: (n: number) => `${n} at the table`,
     you: "You",
     remove: "Remove",
-    language: "العربية",
+    language: "Language",
+    thanksGift: "Thank you, truly",
+    joined: (n: string) => `${n} joined the table ✨`,
     courses: { mezza: "Mezza", salad: "Salad", soup: "Soup", main: "Main", grill: "From the grill", bread: "From the oven", breakfast: "Breakfast", drink: "Drink", dessert: "Dessert", shisha: "Shisha", kids: "Kids" },
   },
 };
@@ -221,8 +336,14 @@ const dict = {
 export type Dict = (typeof dict)["en"];
 export const t = (l: Lang): Dict => dict[l] as Dict;
 
-/** Pick the localised field from a record with `xxxAr` / `xxxEn` keys */
+const SUFFIX: Record<Lang, string> = { ar: "Ar", tr: "Tr", en: "En" };
+const FALLBACK: Record<Lang, Lang[]> = { ar: ["ar", "en", "tr"], tr: ["tr", "en", "ar"], en: ["en", "tr", "ar"] };
+
+/** Pick the localised field (`xxxAr` / `xxxTr` / `xxxEn`), falling back gracefully when a translation is missing */
 export function loc<T extends Record<string, unknown>>(obj: T, key: string, l: Lang): string {
-  const v = obj[`${key}${l === "ar" ? "Ar" : "En"}`] ?? obj[`${key}${l === "ar" ? "En" : "Ar"}`];
-  return (v as string) ?? "";
+  for (const f of FALLBACK[l]) {
+    const v = obj[`${key}${SUFFIX[f]}`];
+    if (typeof v === "string" && v.trim()) return v;
+  }
+  return "";
 }

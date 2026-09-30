@@ -103,7 +103,7 @@ export function MenuProvider({
       if (!state.requests.find((x) => x.id === r.id)) toast(d.reqSent);
     }
     const newGuests = state.guests.filter((g) => !prev.guests.find((p) => p.id === g.id));
-    for (const g of newGuests) toast(lang === "ar" ? `${g.name} انضم للطاولة ✨` : `${g.name} joined the table ✨`);
+    for (const g of newGuests) toast(d.joined(g.name));
   }, [state, toast, d, lang]);
 
   const addToCart: Ctx["addToCart"] = useCallback(async (itemId, opts) => {

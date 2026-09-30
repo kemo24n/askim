@@ -14,7 +14,9 @@
    "dayparts": [
     "evening",
     "night"
-   ]
+   ],
+   "nameTr": "Nargile",
+   "descTr": "Ağır akşamlar, yoğun bulutlar"
   },
   {
    "id": 34125,
@@ -25,7 +27,9 @@
    "descAr": null,
    "descEn": null,
    "image": "__sized__/categories/arabic_shawarma_chicken-thumbnail-840x840-90.jpg",
-   "dayparts": []
+   "dayparts": [],
+   "nameTr": "Mutfağımız",
+   "descTr": null
   },
   {
    "id": 34126,
@@ -38,7 +42,9 @@
    "image": "__sized__/categories/turkish_breakfast-thumbnail-840x840.png",
    "dayparts": [
     "morning"
-   ]
+   ],
+   "nameTr": "Kahvaltı",
+   "descTr": "Türk usulü bir Şam sabahı"
   },
   {
    "id": 34127,
@@ -49,7 +55,9 @@
    "descAr": null,
    "descEn": null,
    "image": "__sized__/categories/soup_cover-thumbnail-840x840-90.jpg",
-   "dayparts": []
+   "dayparts": [],
+   "nameTr": "Çorbalar",
+   "descTr": null
   },
   {
    "id": 34128,
@@ -60,7 +68,9 @@
    "descAr": null,
    "descEn": null,
    "image": "__sized__/categories/askim_salad-thumbnail-840x840-90.jpg",
-   "dayparts": []
+   "dayparts": [],
+   "nameTr": "Salatalar",
+   "descTr": null
   },
   {
    "id": 34129,
@@ -74,7 +84,9 @@
    "dayparts": [
     "afternoon",
     "evening"
-   ]
+   ],
+   "nameTr": "Soğuk Mezeler",
+   "descTr": "Her Levanten sofrası burada başlar"
   },
   {
    "id": 34130,
@@ -88,7 +100,9 @@
    "dayparts": [
     "afternoon",
     "evening"
-   ]
+   ],
+   "nameTr": "Sıcak Mezeler",
+   "descTr": "Fırından ve tavadan, doğrudan masanıza"
   },
   {
    "id": 34131,
@@ -102,7 +116,9 @@
    "dayparts": [
     "afternoon",
     "evening"
-   ]
+   ],
+   "nameTr": "İmza Tabaklar",
+   "descTr": "Paylaşmak için büyük ev tabakları"
   },
   {
    "id": 34132,
@@ -115,7 +131,9 @@
    "image": "__sized__/categories/turkey_with_cheese_2-thumbnail-840x840-90.jpg",
    "dayparts": [
     "morning"
-   ]
+   ],
+   "nameTr": "Menakiş",
+   "descTr": null
   },
   {
    "id": 34133,
@@ -126,7 +144,9 @@
    "descAr": null,
    "descEn": null,
    "image": "__sized__/categories/askim-283-thumbnail-840x840-90.jpg",
-   "dayparts": []
+   "dayparts": [],
+   "nameTr": "Çocuk Menüsü",
+   "descTr": null
   },
   {
    "id": 34134,
@@ -140,7 +160,9 @@
    "dayparts": [
     "afternoon",
     "evening"
-   ]
+   ],
+   "nameTr": "Güveçler",
+   "descTr": "Toprak kapta ağır ağır pişmiş"
   },
   {
    "id": 34135,
@@ -155,7 +177,9 @@
     "afternoon",
     "evening",
     "night"
-   ]
+   ],
+   "nameTr": "Izgaralar",
+   "descTr": "Gerçek kömür ateşinde, olması gerektiği gibi"
   },
   {
    "id": 34137,
@@ -169,7 +193,9 @@
    "dayparts": [
     "morning",
     "afternoon"
-   ]
+   ],
+   "nameTr": "Pide",
+   "descTr": null
   },
   {
    "id": 34138,
@@ -180,7 +206,9 @@
    "descAr": null,
    "descEn": null,
    "image": "__sized__/categories/fatta_shawarma_meat_2-thumbnail-840x840-90.jpg",
-   "dayparts": []
+   "dayparts": [],
+   "nameTr": "Fetteler",
+   "descTr": null
   },
   {
    "id": 34139,
@@ -191,7 +219,9 @@
    "descAr": null,
    "descEn": null,
    "image": "__sized__/categories/pizza_vegetables-thumbnail-840x840-90.jpg",
-   "dayparts": []
+   "dayparts": [],
+   "nameTr": "Pizza",
+   "descTr": null
   },
   {
    "id": 34140,
@@ -202,7 +232,9 @@
    "descAr": null,
    "descEn": null,
    "image": "__sized__/categories/Bev_pbzWfir-thumbnail-840x840-90.jpg",
-   "dayparts": []
+   "dayparts": [],
+   "nameTr": "İçecekler",
+   "descTr": null
   },
   {
    "id": 38618,
@@ -213,7 +245,9 @@
    "descAr": null,
    "descEn": null,
    "image": "__sized__/categories/ice_tea_GabAKW2-thumbnail-840x840-90.jpg",
-   "dayparts": []
+   "dayparts": [],
+   "nameTr": "Buzlu Çay",
+   "descTr": null
   },
   {
    "id": 34141,
@@ -227,7 +261,9 @@
    "dayparts": [
     "morning",
     "afternoon"
-   ]
+   ],
+   "nameTr": "Taze Sıkma Meyve Suları",
+   "descTr": null
   },
   {
    "id": 34142,
@@ -238,7 +274,9 @@
    "descAr": null,
    "descEn": null,
    "image": "__sized__/categories/Pinacolda-thumbnail-840x840-90.jpg",
-   "dayparts": []
+   "dayparts": [],
+   "nameTr": "Smoothie",
+   "descTr": null
   },
   {
    "id": 34143,
@@ -249,7 +287,9 @@
    "descAr": null,
    "descEn": null,
    "image": "__sized__/categories/Starwberry-thumbnail-840x840-90.jpg",
-   "dayparts": []
+   "dayparts": [],
+   "nameTr": "Milkshake",
+   "descTr": null
   },
   {
    "id": 34145,
@@ -260,7 +300,9 @@
    "descAr": null,
    "descEn": null,
    "image": "__sized__/categories/23-NOV-09_TALABAT_UAE_ASKIM_RESTAURANT_AND_CAFE_ASHATI_FRUIT_PIECES__TARIQ_PH_BAfZfSv-thumbnail-840x840-90.JPG",
-   "dayparts": []
+   "dayparts": [],
+   "nameTr": "Özel Kokteyller",
+   "descTr": null
   },
   {
    "id": 34146,
@@ -273,7 +315,9 @@
    "image": "__sized__/categories/ice_coffee-thumbnail-840x840-90.jpg",
    "dayparts": [
     "afternoon"
-   ]
+   ],
+   "nameTr": "Soğuk Kahveler",
+   "descTr": null
   },
   {
    "id": 34147,
@@ -288,7 +332,9 @@
     "morning",
     "afternoon",
     "evening"
-   ]
+   ],
+   "nameTr": "Sıcak İçecekler",
+   "descTr": "Cezveden ve demlikten"
   },
   {
    "id": 34148,
@@ -302,7 +348,9 @@
    "dayparts": [
     "evening",
     "night"
-   ]
+   ],
+   "nameTr": "Mojito",
+   "descTr": null
   },
   {
    "id": 34149,
@@ -313,7 +361,9 @@
    "descAr": null,
    "descEn": null,
    "image": "__sized__/categories/Diet_Pepsi-thumbnail-840x840-90.jpg",
-   "dayparts": []
+   "dayparts": [],
+   "nameTr": "Soğuk İçecekler",
+   "descTr": null
   },
   {
    "id": 34150,
@@ -327,7 +377,9 @@
    "dayparts": [
     "afternoon",
     "evening"
-   ]
+   ],
+   "nameTr": "Dondurma",
+   "descTr": null
   },
   {
    "id": 34151,
@@ -341,7 +393,9 @@
    "dayparts": [
     "evening",
     "night"
-   ]
+   ],
+   "nameTr": "Tatlılar",
+   "descTr": "Tatlı ve sevgi dolu"
   }
  ],
  "items": [
@@ -365,7 +419,9 @@
     216654,
     216653,
     216657
-   ]
+   ],
+   "nameTr": "Aşkım Nargile",
+   "descTr": null
   },
   {
    "id": 228066,
@@ -387,7 +443,9 @@
     216654,
     216653,
     216657
-   ]
+   ],
+   "nameTr": "Tek Kullanımlık Marpuç",
+   "descTr": null
   },
   {
    "id": 228064,
@@ -409,7 +467,9 @@
     216654,
     216653,
     216657
-   ]
+   ],
+   "nameTr": "Nargile",
+   "descTr": null
   },
   {
    "id": 228065,
@@ -431,7 +491,9 @@
     216654,
     216653,
     216657
-   ]
+   ],
+   "nameTr": "Lüle Değişimi",
+   "descTr": null
   },
   {
    "id": 234127,
@@ -453,7 +515,9 @@
     216654,
     216653,
     216657
-   ]
+   ],
+   "nameTr": "Aşkım Lüle Değişimi",
+   "descTr": null
   },
   {
    "id": 234088,
@@ -477,7 +541,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Açma",
+   "descTr": null
   },
   {
    "id": 231009,
@@ -501,7 +567,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Beyaz Peynir",
+   "descTr": null
   },
   {
    "id": 231011,
@@ -525,7 +593,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Peynirli Sahanda Yumurta",
+   "descTr": null
   },
   {
    "id": 231010,
@@ -549,7 +619,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Tel Peynir",
+   "descTr": null
   },
   {
    "id": 216433,
@@ -573,7 +645,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Zeytinyağlı Bakla",
+   "descTr": "Limon suyu, domates ve maydanozlu haşlanmış bakla"
   },
   {
    "id": 216434,
@@ -597,7 +671,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Karışık Turşu",
+   "descTr": null
   },
   {
    "id": 216435,
@@ -621,7 +697,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Domates ve Salatalıklı Beyaz Peynir",
+   "descTr": null
   },
   {
    "id": 216436,
@@ -645,7 +723,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Humus",
+   "descTr": null
   },
   {
    "id": 216437,
@@ -669,7 +749,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Su Böreği",
+   "descTr": null
   },
   {
    "id": 216438,
@@ -691,7 +773,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Kızarmış Sucuk",
+   "descTr": null
   },
   {
    "id": 216440,
@@ -715,7 +799,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Humus Fettesi",
+   "descTr": null
   },
   {
    "id": 216441,
@@ -739,7 +825,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Karışık Taze Sebze Tabağı",
+   "descTr": null
   },
   {
    "id": 216442,
@@ -763,7 +851,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Izgara Hellim",
+   "descTr": null
   },
   {
    "id": 216443,
@@ -787,7 +877,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Helva",
+   "descTr": null
   },
   {
    "id": 216444,
@@ -811,7 +903,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Peynirli Mamuniye",
+   "descTr": "Tereyağında kavrulmuş, şeker ve suyla pişirilmiş irmik, tel peynirle süslenmiş"
   },
   {
    "id": 216445,
@@ -835,7 +929,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Şanklish",
+   "descTr": null
   },
   {
    "id": 216446,
@@ -859,7 +955,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Karışık Zeytin",
+   "descTr": null
   },
   {
    "id": 216447,
@@ -882,7 +980,9 @@
    "pairings": [
     216654,
     216604
-   ]
+   ],
+   "nameTr": "Ballı Kaymak",
+   "descTr": null
   },
   {
    "id": 216448,
@@ -906,7 +1006,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Kaymaklı Mamuniye",
+   "descTr": "Tereyağında kavrulmuş, şeker ve suyla pişirilmiş irmik, kaymakla süslenmiş"
   },
   {
    "id": 216449,
@@ -930,7 +1032,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Patlıcan Makdus",
+   "descTr": "Suriye usulü; sarımsak, ceviz ve biber salçasıyla doldurulup zeytinyağında bekletilmiş patlıcan"
   },
   {
    "id": 216450,
@@ -954,7 +1058,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Karışık Reçel",
+   "descTr": "İncir, kayısı ve çilek reçeli"
   },
   {
    "id": 216451,
@@ -976,7 +1082,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Yoğurtlu Nohut",
+   "descTr": "Yoğurt, tahin, domates ve maydanozlu haşlanmış nohut"
   },
   {
    "id": 216452,
@@ -998,7 +1106,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Zeytinyağlı Nohut",
+   "descTr": "Limon suyu, sarımsak, zeytinyağı ve maydanozlu haşlanmış nohut"
   },
   {
    "id": 216453,
@@ -1022,7 +1132,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Yoğurtlu Bakla",
+   "descTr": "Yoğurt, tahin ve sarımsaklı haşlanmış bakla"
   },
   {
    "id": 216454,
@@ -1044,7 +1156,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Falafel",
+   "descTr": "Nohut, sarımsak ve baharat karışımı, kızartılarak servis edilir"
   },
   {
    "id": 216455,
@@ -1068,7 +1182,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Şakşuka",
+   "descTr": "Kızarmış domates, biber ve soğanla yumurta"
   },
   {
    "id": 216456,
@@ -1090,7 +1206,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Sucuklu Yumurta",
+   "descTr": "Sahanda yumurta ve et sucuğu"
   },
   {
    "id": 216457,
@@ -1112,7 +1230,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Kavurmalı Yumurta",
+   "descTr": null
   },
   {
    "id": 216458,
@@ -1136,7 +1256,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Sahanda Yumurta",
+   "descTr": null
   },
   {
    "id": 216459,
@@ -1160,7 +1282,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Omlet",
+   "descTr": "Peynirli, sebzeli veya mantarlı"
   },
   {
    "id": 216460,
@@ -1185,7 +1309,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Karışık Peynir Tabağı",
+   "descTr": "Arap peynirleri seçkisi: tel peynir, hellim, beyaz peynir ve daha fazlası"
   },
   {
    "id": 216461,
@@ -1209,7 +1335,9 @@
     216654,
     216604,
     216447
-   ]
+   ],
+   "nameTr": "Labne",
+   "descTr": "Otantik lezzetiyle sağlıklı ve protein dolu Türk labnesi"
   },
   {
    "id": 216462,
@@ -1230,7 +1358,9 @@
    "pairings": [
     216470,
     216503
-   ]
+   ],
+   "nameTr": "Kremalı Tavuk Çorbası",
+   "descTr": "Kremayla pişirilmiş haşlanmış tavuk parçaları"
   },
   {
    "id": 216463,
@@ -1253,7 +1383,9 @@
    "pairings": [
     216470,
     216503
-   ]
+   ],
+   "nameTr": "Kremalı Mısır Çorbası",
+   "descTr": "Kremayla pişirilmiş mısır"
   },
   {
    "id": 216464,
@@ -1274,7 +1406,9 @@
    "pairings": [
     216470,
     216503
-   ]
+   ],
+   "nameTr": "Mercimek Çorbası",
+   "descTr": "Sebze ve tavuk suyuyla pişirilmiş mercimek"
   },
   {
    "id": 216465,
@@ -1297,7 +1431,9 @@
    "pairings": [
     216470,
     216503
-   ]
+   ],
+   "nameTr": "Kremalı Mantar Çorbası",
+   "descTr": "Taze krema ile taze mantar"
   },
   {
    "id": 216466,
@@ -1320,7 +1456,9 @@
    "pairings": [
     216470,
     216503
-   ]
+   ],
+   "nameTr": "Şehriye Çorbası",
+   "descTr": "Domates sosuyla pişirilmiş arpa şehriye"
   },
   {
    "id": 216467,
@@ -1343,7 +1481,9 @@
    "pairings": [
     216482,
     216503
-   ]
+   ],
+   "nameTr": "Aşkım Salata",
+   "descTr": "Roka, kuru incir, pancar, pekan cevizi, beyaz peynir, balzamik sirke ve portakal"
   },
   {
    "id": 216468,
@@ -1366,7 +1506,9 @@
    "pairings": [
     216482,
     216503
-   ]
+   ],
+   "nameTr": "Mısırlı Avokado Salatası",
+   "descTr": null
   },
   {
    "id": 216469,
@@ -1389,7 +1531,9 @@
    "pairings": [
     216482,
     216503
-   ]
+   ],
+   "nameTr": "Bulgur Salatası",
+   "descTr": null
   },
   {
    "id": 216470,
@@ -1412,7 +1556,9 @@
    "pairings": [
     216482,
     216503
-   ]
+   ],
+   "nameTr": "Fattuş",
+   "descTr": "Domates, marul, salatalık, biber, nane ve semizotu; kızarmış ekmek, limon ve zeytinyağı ile"
   },
   {
    "id": 216471,
@@ -1435,7 +1581,9 @@
    "pairings": [
     216482,
     216503
-   ]
+   ],
+   "nameTr": "Patlıcanlı Fattuş",
+   "descTr": "Marul, domates, salatalık, biber, nane ve semizotu; kızarmış ekmek, limon, zeytinyağı ve patlıcan ile"
   },
   {
    "id": 216472,
@@ -1458,7 +1606,9 @@
    "pairings": [
     216482,
     216503
-   ]
+   ],
+   "nameTr": "Cevizli Gavurdağı",
+   "descTr": "Salatalık, domates, soğan, ceviz, nar ve zeytinyağı"
   },
   {
    "id": 216473,
@@ -1481,7 +1631,9 @@
    "pairings": [
     216482,
     216503
-   ]
+   ],
+   "nameTr": "Zahterli Roka",
+   "descTr": null
   },
   {
    "id": 216474,
@@ -1505,7 +1657,9 @@
    "pairings": [
     216482,
     216503
-   ]
+   ],
+   "nameTr": "R.S.A.P Salata",
+   "descTr": "Roka, avokado, çilek ve parmesan, özel sosla"
   },
   {
    "id": 216475,
@@ -1528,7 +1682,9 @@
    "pairings": [
     216482,
     216503
-   ]
+   ],
+   "nameTr": "Aşkım Tabule",
+   "descTr": "Maydanoz, elma, nar, salatalık, kinoa, domates, soğan, nane ve zeytinyağı"
   },
   {
    "id": 216476,
@@ -1551,7 +1707,9 @@
    "pairings": [
     216482,
     216503
-   ]
+   ],
+   "nameTr": "Peynirli Kekik Salatası",
+   "descTr": "Ev yapımı kekikli peynir, nar ekşisi ve zeytinyağı"
   },
   {
    "id": 216477,
@@ -1574,7 +1732,9 @@
    "pairings": [
     216482,
     216503
-   ]
+   ],
+   "nameTr": "Cacık",
+   "descTr": null
   },
   {
    "id": 216478,
@@ -1599,7 +1759,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Baba Ganuş",
+   "descTr": null
   },
   {
    "id": 216479,
@@ -1624,7 +1786,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Zeytinyağlı Taze Fasulye",
+   "descTr": null
   },
   {
    "id": 216480,
@@ -1650,7 +1814,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Harak İsbau",
+   "descTr": "Pişmiş mercimek, demirhindi ve hamur parçaları"
   },
   {
    "id": 216481,
@@ -1675,7 +1841,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Humus",
+   "descTr": null
   },
   {
    "id": 216482,
@@ -1700,7 +1868,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Aşkım Humus",
+   "descTr": null
   },
   {
    "id": 216483,
@@ -1725,7 +1895,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Beyrut Humusu",
+   "descTr": null
   },
   {
    "id": 216484,
@@ -1751,7 +1923,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Acılı Humus",
+   "descTr": null
   },
   {
    "id": 216485,
@@ -1776,7 +1950,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Muhammaralı Humus",
+   "descTr": null
   },
   {
    "id": 216486,
@@ -1801,7 +1977,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Kişke",
+   "descTr": null
   },
   {
    "id": 216487,
@@ -1826,7 +2004,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Labne",
+   "descTr": "Sarımsaklı, zahterli veya tarhunlu; protein dolu Türk labnesi"
   },
   {
    "id": 231008,
@@ -1851,7 +2031,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Zahterli Labne",
+   "descTr": null
   },
   {
    "id": 216488,
@@ -1876,7 +2058,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Karışık Zeytin",
+   "descTr": null
   },
   {
    "id": 216489,
@@ -1901,7 +2085,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Karışık Turşu",
+   "descTr": null
   },
   {
    "id": 216490,
@@ -1926,7 +2112,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Muhammara",
+   "descTr": null
   },
   {
    "id": 216491,
@@ -1951,7 +2139,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Patlıcan Musakka",
+   "descTr": "Domates sosu, soğan ve sarımsakla pişirilmiş kızarmış patlıcan"
   },
   {
    "id": 216492,
@@ -1976,7 +2166,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Patlıcan Mutabbal",
+   "descTr": null
   },
   {
    "id": 216493,
@@ -2001,7 +2193,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Cevizli ve Narlı Mutabbal",
+   "descTr": null
   },
   {
    "id": 216494,
@@ -2026,7 +2220,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Pancar Mutabbal",
+   "descTr": null
   },
   {
    "id": 216495,
@@ -2051,7 +2247,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Şanklish",
+   "descTr": "Geleneksel peynir, soğan, domates ve zeytinyağı"
   },
   {
    "id": 216496,
@@ -2076,7 +2274,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Zeytinyağlı Ispanak",
+   "descTr": null
   },
   {
    "id": 216497,
@@ -2101,7 +2301,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Yalancı Dolma",
+   "descTr": null
   },
   {
    "id": 216498,
@@ -2125,7 +2327,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Batreş",
+   "descTr": "Patlıcan, yoğurt ve tahin karışımı üzerine kıyma, soğan ve domates sosu"
   },
   {
    "id": 216499,
@@ -2150,7 +2354,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Sigara Böreği (ızgara veya kızarmış)",
+   "descTr": "Karışık peynirle doldurulmuş hamur ruloları"
   },
   {
    "id": 216500,
@@ -2174,7 +2380,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Nar Ekşili Tavuk Ciğeri",
+   "descTr": "Nar ekşisi, soğan ve kişnişle kızartılmış tavuk ciğeri"
   },
   {
    "id": 216501,
@@ -2198,7 +2406,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Falafel",
+   "descTr": "Nohut, sarımsak ve baharat karışımı, kızartılarak servis edilir"
   },
   {
    "id": 216502,
@@ -2216,7 +2426,9 @@
    "serves": 1,
    "prepMinutes": 8,
    "options": [],
-   "pairings": []
+   "pairings": [],
+   "nameTr": "Patates Kızartması",
+   "descTr": null
   },
   {
    "id": 231004,
@@ -2234,7 +2446,9 @@
    "serves": 1,
    "prepMinutes": 8,
    "options": [],
-   "pairings": []
+   "pairings": [],
+   "nameTr": "Parmak Patates",
+   "descTr": null
   },
   {
    "id": 216503,
@@ -2258,7 +2472,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "İçli Köfte",
+   "descTr": "Kıyma, nar ekşisi ve soğanla doldurulmuş bulgur hamuru"
   },
   {
    "id": 216505,
@@ -2283,7 +2499,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Izgara Hellim",
+   "descTr": null
   },
   {
    "id": 216506,
@@ -2307,7 +2525,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Fırın Kibbe Sıvar el-Sit",
+   "descTr": "Antep fıstıklı kıymayla doldurulmuş, fırında pişirilmiş bulgur hamuru"
   },
   {
    "id": 216507,
@@ -2331,7 +2551,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Kıymalı Humus",
+   "descTr": null
   },
   {
    "id": 216510,
@@ -2356,7 +2578,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Kibeybat",
+   "descTr": "Biber salçası sosu ve zeytinyağıyla haşlanmış bulgur hamuru"
   },
   {
    "id": 216511,
@@ -2380,7 +2604,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Haşlanmış Kibbe",
+   "descTr": "Ceviz ve narlı ıspanak dolgulu hamur"
   },
   {
    "id": 266076,
@@ -2406,7 +2632,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Mantı",
+   "descTr": null
   },
   {
    "id": 216512,
@@ -2430,7 +2658,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Pestolu Et",
+   "descTr": "Pesto sosuyla pişirilmiş et"
   },
   {
    "id": 216513,
@@ -2454,7 +2684,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Musahan Dürüm",
+   "descTr": "Pişmiş tavukla doldurulmuş saç ekmeği ruloları"
   },
   {
    "id": 216514,
@@ -2478,7 +2710,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Kıymalı Sambusek",
+   "descTr": "Kıymayla doldurulmuş, kızartılarak servis edilen hamur"
   },
   {
    "id": 216515,
@@ -2502,7 +2736,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Nakanik Sucuk",
+   "descTr": null
   },
   {
    "id": 216517,
@@ -2522,7 +2758,9 @@
    "serves": 1,
    "prepMinutes": 8,
    "options": [],
-   "pairings": []
+   "pairings": [],
+   "nameTr": "Acılı Patates",
+   "descTr": null
   },
   {
    "id": 216518,
@@ -2547,7 +2785,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Su Böreği",
+   "descTr": null
   },
   {
    "id": 216519,
@@ -2573,7 +2813,9 @@
     216541,
     216470,
     216597
-   ]
+   ],
+   "nameTr": "Tatar Böreği",
+   "descTr": null
   },
   {
    "id": 231006,
@@ -2591,7 +2833,9 @@
    "serves": 1,
    "prepMinutes": 8,
    "options": [],
-   "pairings": []
+   "pairings": [],
+   "nameTr": "Sarı veya Beyaz Pilav Tabağı",
+   "descTr": null
   },
   {
    "id": 231003,
@@ -2613,7 +2857,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Paşa ve Askerleri",
+   "descTr": null
   },
   {
    "id": 216520,
@@ -2635,7 +2881,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Tavuk Cordon Bleu",
+   "descTr": "Füme hindi ve mozzarella ile doldurulmuş tavuk göğsü"
   },
   {
    "id": 216521,
@@ -2657,7 +2905,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Tavuk Şinitzel",
+   "descTr": "Patates ve ızgara sebzeli kızarmış tavuk"
   },
   {
    "id": 216522,
@@ -2679,7 +2929,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Kremalı Limon Soslu Tavuk",
+   "descTr": "Krema sosu ve patates kızartmasıyla ızgara tavuk dilimleri"
   },
   {
    "id": 216523,
@@ -2701,7 +2953,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Izgara Lagos",
+   "descTr": "Sebze ve patatesle ızgara lagos fileto"
   },
   {
    "id": 216524,
@@ -2723,7 +2977,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Izgara Levrek",
+   "descTr": "Haşlanmış sebze ve patatesle kömür ateşinde levrek"
   },
   {
    "id": 216525,
@@ -2745,7 +3001,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Izgara Karides",
+   "descTr": "Sebze ve pilavla servis edilen ızgara karides"
   },
   {
    "id": 231002,
@@ -2767,7 +3025,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Tavuklu Kabsa",
+   "descTr": null
   },
   {
    "id": 216526,
@@ -2789,20 +3049,24 @@
      "nameAr": "دجاج",
      "nameEn": "Chicken",
      "priceDelta": 0,
-     "sort": 0
+     "sort": 0,
+     "nameTr": "Tavuk"
     },
     {
      "nameAr": "لحم",
      "nameEn": "Meat",
      "priceDelta": 0,
-     "sort": 1
+     "sort": 1,
+     "nameTr": "Et"
     }
    ],
    "pairings": [
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Kabsa",
+   "descTr": "Tercihinize göre tavuklu veya etli"
   },
   {
    "id": 216527,
@@ -2824,7 +3088,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Pilavlı Yoğurtlu Kibbe",
+   "descTr": "Kıyma ve cevizle doldurulmuş, yoğurt, kişniş ve sarımsakla pişirilmiş kibbe, pilavla"
   },
   {
    "id": 216528,
@@ -2846,7 +3112,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Sarımsak Limon Soslu Et",
+   "descTr": "Mantar, sarımsak ve limon soslu ızgara et, patatesle"
   },
   {
    "id": 216529,
@@ -2870,7 +3138,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Kestaneli Etli Pilav",
+   "descTr": "Et ve kestaneli şark pilavı"
   },
   {
    "id": 216530,
@@ -2892,7 +3162,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Pilavlı Şiş Barak",
+   "descTr": "Yoğurt, sarımsak ve kişnişle pişirilmiş kıymalı mantı, pilavla"
   },
   {
    "id": 216531,
@@ -2916,7 +3188,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "İç Pilavlı Tavuk",
+   "descTr": "Şark pilavı ve kıymayla kızartılmış tavuk"
   },
   {
    "id": 216532,
@@ -2940,7 +3214,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Kuzu Tandır Pilavlı",
+   "descTr": "Şark pilavıyla pişirilmiş kuzu eti"
   },
   {
    "id": 216533,
@@ -2964,7 +3240,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Etli Yaprak Sarma",
+   "descTr": null
   },
   {
    "id": 216534,
@@ -2987,7 +3265,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Peynirli",
+   "descTr": null
   },
   {
    "id": 216535,
@@ -3010,7 +3290,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Ballı Kraft",
+   "descTr": null
   },
   {
    "id": 216536,
@@ -3033,7 +3315,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Sebzeli Labne",
+   "descTr": "Otantik lezzetiyle sağlıklı ve protein dolu Türk labnesi"
   },
   {
    "id": 216537,
@@ -3056,7 +3340,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Zahterli Labne",
+   "descTr": "Otantik lezzetiyle sağlıklı ve protein dolu Türk labnesi"
   },
   {
    "id": 216538,
@@ -3079,7 +3365,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Muhammara",
+   "descTr": null
   },
   {
    "id": 216539,
@@ -3102,7 +3390,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Peynirli Muhammara",
+   "descTr": null
   },
   {
    "id": 216540,
@@ -3123,7 +3413,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Hindi Füme Peynirli",
+   "descTr": null
   },
   {
    "id": 216541,
@@ -3146,7 +3438,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Zahter",
+   "descTr": null
   },
   {
    "id": 216542,
@@ -3169,7 +3463,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Peynirli Zahter",
+   "descTr": null
   },
   {
    "id": 216543,
@@ -3193,7 +3489,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Çıtır Tavuk",
+   "descTr": null
   },
   {
    "id": 216544,
@@ -3217,7 +3515,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Hamburger",
+   "descTr": null
   },
   {
    "id": 216545,
@@ -3241,7 +3541,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Penne Alfredo",
+   "descTr": null
   },
   {
    "id": 216546,
@@ -3265,7 +3567,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Tavuk Şiş Dürüm",
+   "descTr": null
   },
   {
    "id": 216547,
@@ -3289,7 +3593,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Spagetti Bolonez",
+   "descTr": null
   },
   {
    "id": 216549,
@@ -3313,7 +3619,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Spagetti Napoliten",
+   "descTr": null
   },
   {
    "id": 216550,
@@ -3335,7 +3643,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Pilavlı Dâvud Paşa",
+   "descTr": "Domates sosu ve soğanla pişirilmiş ızgara köfteler"
   },
   {
    "id": 216551,
@@ -3357,7 +3667,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Firik Güveç",
+   "descTr": null
   },
   {
    "id": 216552,
@@ -3379,7 +3691,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Pilavlı Hint Kebabı",
+   "descTr": null
   },
   {
    "id": 216553,
@@ -3401,7 +3715,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Tahinli Köfte",
+   "descTr": null
   },
   {
    "id": 216554,
@@ -3423,7 +3739,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Domatesli Köfte",
+   "descTr": null
   },
   {
    "id": 216555,
@@ -3445,7 +3763,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Pilavlı Et Güveç",
+   "descTr": null
   },
   {
    "id": 216556,
@@ -3467,7 +3787,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Pilavlı Tavuk Şiş Güveç",
+   "descTr": null
   },
   {
    "id": 216557,
@@ -3489,7 +3811,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Pilavlı Karides Güveç",
+   "descTr": null
   },
   {
    "id": 216558,
@@ -3511,7 +3835,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Etli Arayes",
+   "descTr": null
   },
   {
    "id": 216559,
@@ -3533,7 +3859,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Kemiksiz Tavuk Izgara",
+   "descTr": null
   },
   {
    "id": 216560,
@@ -3555,7 +3883,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Izgara Tavuk Göğsü",
+   "descTr": null
   },
   {
    "id": 216561,
@@ -3577,7 +3907,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Izgara Et",
+   "descTr": null
   },
   {
    "id": 216562,
@@ -3599,7 +3931,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Bulgurlu Izgara Köfte",
+   "descTr": null
   },
   {
    "id": 266063,
@@ -3623,7 +3957,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "İskender Kebap",
+   "descTr": null
   },
   {
    "id": 216563,
@@ -3645,7 +3981,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Kebap",
+   "descTr": null
   },
   {
    "id": 216564,
@@ -3669,7 +4007,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Adana Kebap",
+   "descTr": null
   },
   {
    "id": 216565,
@@ -3691,7 +4031,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Patlıcan Kebabı",
+   "descTr": null
   },
   {
    "id": 216566,
@@ -3713,7 +4055,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Haşhaşlı Kebap",
+   "descTr": null
   },
   {
    "id": 216567,
@@ -3735,7 +4079,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Fıstıklı Kebap",
+   "descTr": null
   },
   {
    "id": 216568,
@@ -3757,7 +4103,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Kaşarlı Köfte",
+   "descTr": null
   },
   {
    "id": 231007,
@@ -3779,7 +4127,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Pirzola",
+   "descTr": null
   },
   {
    "id": 216570,
@@ -3803,7 +4153,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Karışık Izgara",
+   "descTr": null
   },
   {
    "id": 216571,
@@ -3825,7 +4177,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Şaşlık",
+   "descTr": null
   },
   {
    "id": 216572,
@@ -3847,7 +4201,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Tavuk Şiş",
+   "descTr": null
   },
   {
    "id": 216573,
@@ -3869,7 +4225,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Yoğurtlu Tavuk Şiş",
+   "descTr": null
   },
   {
    "id": 216574,
@@ -3893,7 +4251,9 @@
     216482,
     216492,
     216470
-   ]
+   ],
+   "nameTr": "Tuşka",
+   "descTr": null
   },
   {
    "id": 216581,
@@ -3914,7 +4274,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Nar Ekşili Lahmacun",
+   "descTr": null
   },
   {
    "id": 216582,
@@ -3935,7 +4297,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Sebzeli Lahmacun",
+   "descTr": null
   },
   {
    "id": 216583,
@@ -3958,7 +4322,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Karışık Peynirli Pide",
+   "descTr": null
   },
   {
    "id": 216584,
@@ -3981,7 +4347,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Şam Pidesi",
+   "descTr": null
   },
   {
    "id": 216585,
@@ -4002,7 +4370,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Kaşarlı Sucuklu Pide",
+   "descTr": null
   },
   {
    "id": 216586,
@@ -4025,7 +4395,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Ispanaklı Pide",
+   "descTr": null
   },
   {
    "id": 216587,
@@ -4048,7 +4420,9 @@
    "pairings": [
     216654,
     216477
-   ]
+   ],
+   "nameTr": "Beyaz Peynirli Sebzeli Taze Kekik",
+   "descTr": null
   },
   {
    "id": 216588,
@@ -4070,7 +4444,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Kavurma Fettesi",
+   "descTr": "Pişmiş kavurma, tahin katmanı ve çıtır ekmek"
   },
   {
    "id": 266077,
@@ -4092,7 +4468,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Patlıcan Fettesi",
+   "descTr": null
   },
   {
    "id": 216589,
@@ -4114,7 +4492,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Tavuk Fettesi",
+   "descTr": "Pişmiş tavuk, pilav ve tahin katmanları, çıtır ekmekle"
   },
   {
    "id": 216590,
@@ -4136,7 +4516,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Humus Fettesi",
+   "descTr": "Tahin soslu haşlanmış nohut ve çıtır ekmek"
   },
   {
    "id": 216593,
@@ -4158,7 +4540,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Margarita",
+   "descTr": null
   },
   {
    "id": 216594,
@@ -4180,7 +4564,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Hindi Fümeli",
+   "descTr": null
   },
   {
    "id": 216595,
@@ -4202,7 +4588,9 @@
     216470,
     216482,
     216475
-   ]
+   ],
+   "nameTr": "Sebzeli",
+   "descTr": null
   },
   {
    "id": 216666,
@@ -4225,7 +4613,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Limonlu Buzlu Çay",
+   "descTr": null
   },
   {
    "id": 216664,
@@ -4248,7 +4638,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Liçi ve Çarkıfelek Buzlu Çay",
+   "descTr": null
   },
   {
    "id": 216665,
@@ -4271,7 +4663,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Şeftalili Buzlu Çay",
+   "descTr": null
   },
   {
    "id": 216596,
@@ -4294,7 +4688,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Elma",
+   "descTr": null
   },
   {
    "id": 216597,
@@ -4317,7 +4713,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Aşkım Özel",
+   "descTr": null
   },
   {
    "id": 216624,
@@ -4341,7 +4739,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Avokado",
+   "descTr": null
   },
   {
    "id": 216599,
@@ -4364,7 +4764,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Havuç",
+   "descTr": null
   },
   {
    "id": 216600,
@@ -4387,7 +4789,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Kivi",
+   "descTr": null
   },
   {
    "id": 216601,
@@ -4410,7 +4814,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Limonata",
+   "descTr": null
   },
   {
    "id": 216602,
@@ -4433,7 +4839,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Naneli Limonata",
+   "descTr": null
   },
   {
    "id": 216603,
@@ -4456,7 +4864,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Muzlu Süt",
+   "descTr": null
   },
   {
    "id": 216663,
@@ -4479,7 +4889,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Karışık Yeşil Bahçe",
+   "descTr": null
   },
   {
    "id": 216604,
@@ -4502,7 +4914,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Portakal",
+   "descTr": null
   },
   {
    "id": 216605,
@@ -4525,7 +4939,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Portakal Havuç",
+   "descTr": null
   },
   {
    "id": 216606,
@@ -4548,7 +4964,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Ananas",
+   "descTr": null
   },
   {
    "id": 216607,
@@ -4571,7 +4989,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Nar",
+   "descTr": null
   },
   {
    "id": 216608,
@@ -4594,7 +5014,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Çilek",
+   "descTr": null
   },
   {
    "id": 216609,
@@ -4617,7 +5039,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Kavun",
+   "descTr": null
   },
   {
    "id": 216610,
@@ -4640,7 +5064,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Karpuz",
+   "descTr": null
   },
   {
    "id": 216611,
@@ -4663,7 +5089,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Mavi Hawaii",
+   "descTr": null
   },
   {
    "id": 228068,
@@ -4686,7 +5114,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Karışık Orman Meyvesi",
+   "descTr": null
   },
   {
    "id": 216612,
@@ -4709,7 +5139,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Portakallı Liçi",
+   "descTr": null
   },
   {
    "id": 216613,
@@ -4732,7 +5164,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Çarkıfelek",
+   "descTr": null
   },
   {
    "id": 216614,
@@ -4755,7 +5189,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Pina Colada",
+   "descTr": null
   },
   {
    "id": 216615,
@@ -4778,7 +5214,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Çilek",
+   "descTr": null
   },
   {
    "id": 216616,
@@ -4801,7 +5239,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Karamel",
+   "descTr": null
   },
   {
    "id": 216617,
@@ -4824,7 +5264,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Çikolata",
+   "descTr": null
   },
   {
    "id": 216618,
@@ -4847,7 +5289,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Oreo",
+   "descTr": null
   },
   {
    "id": 216619,
@@ -4870,7 +5314,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Çilek",
+   "descTr": null
   },
   {
    "id": 216620,
@@ -4893,7 +5339,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Vanilya",
+   "descTr": null
   },
   {
    "id": 216623,
@@ -4916,7 +5364,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Aşkım Özel Kokteyl",
+   "descTr": null
   },
   {
    "id": 216625,
@@ -4939,7 +5389,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "İmparator",
+   "descTr": null
   },
   {
    "id": 228069,
@@ -4962,7 +5414,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Özel Avokado Kokteyl",
+   "descTr": null
   },
   {
    "id": 216626,
@@ -4985,7 +5439,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Özel Nutella Kokteyl",
+   "descTr": null
   },
   {
    "id": 216627,
@@ -5008,7 +5464,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Buzlu Americano",
+   "descTr": null
   },
   {
    "id": 216628,
@@ -5031,7 +5489,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Aşkım Buzlu Latte",
+   "descTr": null
   },
   {
    "id": 216629,
@@ -5054,7 +5514,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Karamel Frappe",
+   "descTr": null
   },
   {
    "id": 216630,
@@ -5077,7 +5539,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Buzlu İspanyol Latte",
+   "descTr": null
   },
   {
    "id": 244096,
@@ -5100,7 +5564,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Buzlu Karamel Latte",
+   "descTr": null
   },
   {
    "id": 216631,
@@ -5123,7 +5589,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Buzlu Latte",
+   "descTr": null
   },
   {
    "id": 244095,
@@ -5146,7 +5614,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Mocha Frappe",
+   "descTr": null
   },
   {
    "id": 216632,
@@ -5169,7 +5639,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Buzlu Mocha Latte",
+   "descTr": null
   },
   {
    "id": 216633,
@@ -5192,7 +5664,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Oreo Frappe",
+   "descTr": null
   },
   {
    "id": 216634,
@@ -5215,7 +5689,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Buzlu Vanilya Latte",
+   "descTr": null
   },
   {
    "id": 216635,
@@ -5238,7 +5714,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Americano",
+   "descTr": null
   },
   {
    "id": 216636,
@@ -5262,19 +5740,23 @@
      "nameAr": "صغير",
      "nameEn": "Small",
      "priceDelta": 0,
-     "sort": 0
+     "sort": 0,
+     "nameTr": "Küçük"
     },
     {
      "nameAr": "وسط",
      "nameEn": "Medium",
      "priceDelta": 0,
-     "sort": 1
+     "sort": 1,
+     "nameTr": "Orta"
     }
    ],
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Dallah Arap Kahvesi",
+   "descTr": null
   },
   {
    "id": 216637,
@@ -5297,7 +5779,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Cappuccino",
+   "descTr": null
   },
   {
    "id": 216638,
@@ -5320,7 +5804,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Karamel Latte",
+   "descTr": null
   },
   {
    "id": 228081,
@@ -5343,7 +5829,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Papatya Çayı",
+   "descTr": null
   },
   {
    "id": 216639,
@@ -5366,7 +5854,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Limonlu Kimyon",
+   "descTr": null
   },
   {
    "id": 216640,
@@ -5389,7 +5879,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Double Espresso",
+   "descTr": null
   },
   {
    "id": 216641,
@@ -5412,7 +5904,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Espresso",
+   "descTr": null
   },
   {
    "id": 216642,
@@ -5435,7 +5929,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Ballı Zencefil",
+   "descTr": null
   },
   {
    "id": 228080,
@@ -5458,7 +5954,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Ballı Limonlu Zencefil",
+   "descTr": null
   },
   {
    "id": 228085,
@@ -5481,7 +5979,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Yeşil Çay",
+   "descTr": null
   },
   {
    "id": 216643,
@@ -5504,7 +6004,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Sıcak Çikolata",
+   "descTr": null
   },
   {
    "id": 244094,
@@ -5527,7 +6029,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Nane Çayı",
+   "descTr": null
   },
   {
    "id": 216644,
@@ -5550,7 +6054,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Karak Çay",
+   "descTr": null
   },
   {
    "id": 216645,
@@ -5573,7 +6079,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Latte",
+   "descTr": null
   },
   {
    "id": 216646,
@@ -5596,7 +6104,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Macchiato",
+   "descTr": null
   },
   {
    "id": 228084,
@@ -5619,7 +6129,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Double Macchiato",
+   "descTr": null
   },
   {
    "id": 228082,
@@ -5642,7 +6154,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Mocha",
+   "descTr": null
   },
   {
    "id": 216649,
@@ -5665,7 +6179,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Fas Çayı Demlik (Orta)",
+   "descTr": null
   },
   {
    "id": 216650,
@@ -5688,7 +6204,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Fas Çayı Demlik (Küçük)",
+   "descTr": null
   },
   {
    "id": 228079,
@@ -5711,7 +6229,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Salep",
+   "descTr": null
   },
   {
    "id": 228086,
@@ -5735,7 +6255,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "İspanyol Latte",
+   "descTr": null
   },
   {
    "id": 216651,
@@ -5758,7 +6280,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Poşet Çay",
+   "descTr": null
   },
   {
    "id": 216653,
@@ -5781,7 +6305,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Türk Kahvesi",
+   "descTr": null
   },
   {
    "id": 228075,
@@ -5804,7 +6330,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Duble Türk Kahvesi",
+   "descTr": null
   },
   {
    "id": 216654,
@@ -5827,7 +6355,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Türk Çayı (Büyük)",
+   "descTr": null
   },
   {
    "id": 228078,
@@ -5850,7 +6380,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Türk Çayı Demlik",
+   "descTr": null
   },
   {
    "id": 228077,
@@ -5873,7 +6405,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Türk Çayı (Küçük)",
+   "descTr": null
   },
   {
    "id": 228076,
@@ -5896,7 +6430,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Beyaz Kahve",
+   "descTr": null
   },
   {
    "id": 216655,
@@ -5919,7 +6455,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Kuş Çayı (Zuhurat)",
+   "descTr": null
   },
   {
    "id": 216656,
@@ -5942,7 +6480,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Yaban Mersini",
+   "descTr": null
   },
   {
    "id": 216657,
@@ -5965,7 +6505,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Klasik",
+   "descTr": null
   },
   {
    "id": 216658,
@@ -5988,7 +6530,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Yeşil Elma",
+   "descTr": null
   },
   {
    "id": 216659,
@@ -6011,7 +6555,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Çarkıfelek",
+   "descTr": null
   },
   {
    "id": 216660,
@@ -6034,7 +6580,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Nar",
+   "descTr": null
   },
   {
    "id": 216661,
@@ -6057,7 +6605,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Çilek",
+   "descTr": null
   },
   {
    "id": 307861,
@@ -6078,7 +6628,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Coca-Cola",
+   "descTr": null
   },
   {
    "id": 234087,
@@ -6099,7 +6651,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Cam Şişe Su (Büyük)",
+   "descTr": null
   },
   {
    "id": 234086,
@@ -6120,7 +6674,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Cam Şişe Su (Küçük)",
+   "descTr": null
   },
   {
    "id": 216662,
@@ -6141,7 +6697,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Ayran",
+   "descTr": null
   },
   {
    "id": 216670,
@@ -6162,7 +6720,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Su (Büyük)",
+   "descTr": null
   },
   {
    "id": 216671,
@@ -6183,7 +6743,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Su (Küçük)",
+   "descTr": null
   },
   {
    "id": 216667,
@@ -6204,7 +6766,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Red Bull",
+   "descTr": null
   },
   {
    "id": 216668,
@@ -6225,7 +6789,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Gazlı İçecek",
+   "descTr": null
   },
   {
    "id": 216669,
@@ -6246,7 +6812,9 @@
    "pairings": [
     216683,
     216685
-   ]
+   ],
+   "nameTr": "Soda",
+   "descTr": null
   },
   {
    "id": 216672,
@@ -6270,7 +6838,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "Kaymaklı Arap Dondurması",
+   "descTr": null
   },
   {
    "id": 216674,
@@ -6294,7 +6864,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "Çikolata",
+   "descTr": null
   },
   {
    "id": 216676,
@@ -6318,7 +6890,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "Antep Fıstığı",
+   "descTr": null
   },
   {
    "id": 216677,
@@ -6342,7 +6916,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "Çilek",
+   "descTr": null
   },
   {
    "id": 216678,
@@ -6366,7 +6942,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "Vanilya",
+   "descTr": null
   },
   {
    "id": 216681,
@@ -6388,7 +6966,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "Dondurmalı Baklava",
+   "descTr": null
   },
   {
    "id": 234267,
@@ -6410,7 +6990,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "Orman Meyveli Cheesecake",
+   "descTr": null
   },
   {
    "id": 216685,
@@ -6432,7 +7014,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "Karamelli Tres Leches",
+   "descTr": null
   },
   {
    "id": 228072,
@@ -6456,7 +7040,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "Meyve Tabağı",
+   "descTr": null
   },
   {
    "id": 216688,
@@ -6478,7 +7064,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "Halawet el-Cibn",
+   "descTr": null
   },
   {
    "id": 216689,
@@ -6500,7 +7088,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "Pamuk Şekerli Dondurma",
+   "descTr": null
   },
   {
    "id": 216683,
@@ -6522,7 +7112,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "Peynirli Künefe",
+   "descTr": null
   },
   {
    "id": 216684,
@@ -6544,7 +7136,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "Dondurmalı Künefe",
+   "descTr": null
   },
   {
    "id": 216690,
@@ -6566,7 +7160,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "Fıstıklı Mafruka",
+   "descTr": null
   },
   {
    "id": 216692,
@@ -6588,7 +7184,9 @@
     216653,
     216635,
     216644
-   ]
+   ],
+   "nameTr": "San Sebastian Cheesecake",
+   "descTr": null
   }
  ]
 }

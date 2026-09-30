@@ -5,8 +5,8 @@ import { bad, ok, requireAdmin } from "@/lib/api";
 import { getSettings } from "@/lib/menu";
 
 const Body = z.object({
-  nameAr: z.string().max(60), nameEn: z.string().max(60),
-  taglineAr: z.string().max(120), taglineEn: z.string().max(120),
+  nameAr: z.string().max(60), nameEn: z.string().max(60), nameTr: z.string().max(60),
+  taglineAr: z.string().max(120), taglineEn: z.string().max(120), taglineTr: z.string().max(120),
   phone: z.string().max(40).nullable(), whatsapp: z.string().max(40).nullable(),
   instagram: z.string().max(200).nullable(), facebook: z.string().max(200).nullable(),
   googleReviews: z.string().max(300).nullable(), address: z.string().max(200).nullable(),
