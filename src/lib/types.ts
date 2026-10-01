@@ -1,0 +1,67 @@
+export type MenuOption = { id: number; nameAr: string; nameEn: string; nameTr: string | null; priceDelta: number };
+export type MenuItem = {
+  id: number;
+  categoryId: number;
+  nameAr: string;
+  nameEn: string;
+  nameTr: string | null;
+  descAr: string | null;
+  descEn: string | null;
+  descTr: string | null;
+  price: number;
+  image: string | null;
+  available: boolean;
+  signature: boolean;
+  tags: string[];
+  role: string;
+  serves: number;
+  prepMinutes: number;
+  pairings: number[];
+  options: MenuOption[];
+  today: number;
+};
+export type MenuCategory = {
+  id: number;
+  parentId: number | null;
+  nameAr: string;
+  nameEn: string;
+  nameTr: string | null;
+  descAr: string | null;
+  descEn: string | null;
+  descTr: string | null;
+  image: string | null;
+  sort: number;
+  dayparts: string[];
+};
+export type PublicSettings = {
+  nameAr: string;
+  nameEn: string;
+  nameTr: string;
+  taglineAr: string;
+  taglineEn: string;
+  taglineTr: string;
+  logoUrl: string | null;
+  coverUrl: string | null;
+  instagram: string | null;
+  facebook: string | null;
+  whatsapp: string | null;
+  googleReviews: string | null;
+  address: string | null;
+  rates: { USD: number; EUR: number; TRY: number; AED: number };
+  showOldSYP: boolean;
+  serviceFeePct: number;
+  giftsEnabled: boolean;
+  ordersEnabled: boolean;
+};
+export type MenuData = { settings: PublicSettings; categories: MenuCategory[]; items: MenuItem[] };
+
+export type TableContext = {
+  tableId: number;
+  tableNumber: number;
+  zone: string;
+  token: string;
+  sessionId: string;
+  guestId: string;
+  guestName: string;
+  guestColor: string;
+} | null;
