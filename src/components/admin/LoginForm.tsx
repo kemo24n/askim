@@ -17,7 +17,7 @@ export function LoginForm() {
     else { setErr("Wrong password"); setBusy(false); }
   };
   return (
-    <main className="relative grid min-h-dvh place-items-center overflow-hidden px-6">
+    <main className="relative flex min-h-dvh flex-col items-center justify-center overflow-hidden px-6">
       <div className="absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_20%,rgba(147,29,30,0.35),transparent_70%)]" />
       <form onSubmit={submit} className="relative w-full max-w-sm text-center">
         <Logo size="lg" />

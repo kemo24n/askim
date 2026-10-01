@@ -130,7 +130,16 @@ html[lang="ar"] .font-display { font-family: var(--font-callig); letter-spacing:
 .admin input:focus, .admin select:focus, .admin textarea:focus { border-color: var(--color-gold); }
 
 @media print {
-  body { background: #fff !important; color: #000 !important; }
-  .no-print { display: none !important; }
+  @page { size: A4; margin: 12mm; }
+  html, body { background: #fff !important; color: #000 !important; }
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  .no-print, aside, .print-hide { display: none !important; }
   .grain::after { display: none; }
+  .admin .mx-auto { max-width: none !important; padding: 0 !important; }
+  .qr-grid { display: grid !important; grid-template-columns: repeat(2, 88mm) !important; gap: 8mm !important; justify-content: center; }
+  .qr-card-wrap { break-inside: avoid; page-break-inside: avoid; opacity: 1 !important; }
+  .qr-card { width: 88mm; border-radius: 6mm !important; box-shadow: none !important; }
+  body.print-one .qr-card-wrap:not(.print-target) { display: none !important; }
+  body.print-one .qr-grid { grid-template-columns: 110mm !important; }
+  body.print-one .qr-card { width: 110mm; }
 }
